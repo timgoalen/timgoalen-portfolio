@@ -4,3 +4,34 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    font-family: 'Poppins', sans-serif;;
+}
+
+img {
+    width: 100%;
+}
+
+main {
+    padding: 0 4%;
+}
+
+h2 {
+    text-align: center;
+    margin: 4% 0;
+}
+
+p {
+    margin: 1rem 0;
+}
+
+.about-text {
+    /* margin: 1rem 0; */
+    text-align: justify;
+}
+
+audio {
+    display: block;
+    margin: 0 auto 4% auto;
+}
