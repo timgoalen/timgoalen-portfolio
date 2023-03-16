@@ -41,6 +41,10 @@ h3 {
     font-size: 2rem; */
 }
 
+#credits ul {
+    list-style-type: none;
+}
+
 p {
     margin: 1rem 0;
 }
