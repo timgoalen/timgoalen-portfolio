@@ -17,6 +17,10 @@ main {
     padding: 0 4%;
 }
 
+h1 {
+    color: #fb0404;
+}
+
 h2 {
     text-align: center;
     margin: 4% 0;
@@ -42,3 +46,12 @@ textarea {
     margin-bottom: 1rem;
 }
 
+.footer-links {
+    text-align: center;
+    border-top: 1px solid black;
+}
+
+.footer-links > li {
+    display: inline;
+    font-size: 200%;
+}
