@@ -93,6 +93,8 @@ textarea {
     margin-bottom: 1rem;
 }
 
+/* Footer */
+
 .footer-links {
     text-align: center;
     border-top: 1px solid black;
@@ -101,6 +103,7 @@ textarea {
 .footer-links > li {
     display: inline;
     font-size: 2rem;
+    margin: 0 1rem;
 }
 
 /* Media queries */
