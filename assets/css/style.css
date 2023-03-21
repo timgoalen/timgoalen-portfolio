@@ -40,7 +40,6 @@ h2 {
     font-size: 4rem;
 }
 
-
 /* Navigation - based on https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
 
 .navigation {
@@ -160,7 +159,6 @@ textarea {
     .navigation.responsive a {
         float: none;
         display: block;
-        text-align: left;
     }
 }
 
