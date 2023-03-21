@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
+/* General styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +13,7 @@ body {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 main {
@@ -40,21 +42,40 @@ h2 {
 }
 
 h3 {
-    /* font-weight: 200;
-    font-size: 2rem; */
+}
+
+#credits img {
+    margin: 9% 0 2% 0;
+}
+
+#credits #first-credits-img {
+    margin-top: 0;
 }
 
 #credits ul {
     list-style-type: none;
+    line-height: 2rem;
+
 }
+
+#credits p {
+    font-size: 0.7rem;
+    margin: 0.7rem 0;
+}
+
+.credits-channel-text {
+    font-weight: 500;
+}
+
+
 
 p {
     margin: 1rem 0;
 }
 
 .about-text {
-    text-align: justify;
     font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 audio {
