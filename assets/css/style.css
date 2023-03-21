@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -25,6 +26,7 @@ main {
     font-size: 9vw;
 }
 
+/* ***check if this is needed, or duplicated elsewhere*** */
 a {
     text-decoration: none;
     color: black;
@@ -38,16 +40,41 @@ h2 {
     font-size: 4rem;
 }
 
-.about-grid-container img {
+
+/* Navigation - based on https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
+
+.navigation {
+    overflow: hidden;
 }
 
-h3 {
+.navigation a {
+    float: right;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    /* padding: 14px 16px; */
 }
+
+.navigation a:hover {
+    background-color: #ddd;
+}
+
+.navigation a.active {
+    background-color: #85c9ca;
+    color: white;
+}
+
+.navigation .burger-bars-icon {
+    display: none;
+}
+
 
 #credits img {
     margin: 9% 0 2% 0;
 }
 
+/* ***re-write this selector*** */
 #credits #first-credits-img {
     margin-top: 0;
 }
@@ -66,8 +93,6 @@ h3 {
 .credits-channel-text {
     font-weight: 500;
 }
-
-
 
 p {
     margin: 1rem 0;
@@ -100,13 +125,44 @@ textarea {
     border-top: 1px solid black;
 }
 
-.footer-links > li {
+.footer-links>li {
     display: inline;
     font-size: 2rem;
     margin: 0 1rem;
 }
 
 /* Media queries */
+
+/* ***consolodate this media query into the next 'min-width' one*** */
+@media screen and (max-width: 600px) {
+    .navigation a {
+        display: none;
+    }
+    /* .navigation a:not(:first-child) {
+        display: none;
+    } */
+
+    .navigation a.burger-bars-icon {
+        float: right;
+        display: block;
+    }
+
+    .navigation.responsive {
+        position: relative;
+    }
+
+    .navigation.responsive a.burger-bars-icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .navigation.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
 
 @media screen and (min-width:600px) {
 
@@ -123,7 +179,8 @@ textarea {
     }
 
     figcaption {
-padding-left: 30%;    }
+        padding-left: 30%;
+    }
 }
 
 @media screen and (min-width:900px) {
