@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -112,14 +112,15 @@ audio {
     margin: 0 auto 4% auto;
 }
 
-/* #contact {
-    min-height: 90vh;
-} */
+/* Contact section */
 
 input,
 textarea {
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Footer */
@@ -177,10 +178,12 @@ textarea {
     audio {
         width: 42%;
     }
+    
+    #contact {
+        margin: auto;
+        width: 70%;
+    }
 
-    /* #contact {
-        margin-top: 4%;
-    } */
 }
 
 @media screen and (min-width: 1440px) {
