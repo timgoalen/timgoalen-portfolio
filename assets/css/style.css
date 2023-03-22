@@ -155,12 +155,13 @@ textarea {
 
     .credits-grid-container {
         display: grid;
-        grid-template-columns: 48% 48%;
+        grid-template-columns: 1fr 1fr;
         gap: 1% 4%;
     }
 
     figcaption {
-        padding-left: 30%;
+        /* padding-left: 30%; */
+        text-align: center;
     }
 
     #credits img {
@@ -176,6 +177,10 @@ textarea {
     audio {
         width: 42%;
     }
+
+    /* #contact {
+        margin-top: 4%;
+    } */
 }
 
 @media screen and (min-width: 1440px) {
