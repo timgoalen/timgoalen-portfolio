@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -22,17 +22,28 @@ main {
 header {
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
     padding: 2% 4%;
+
+    /* position: fixed;
+    width: 100%;
+    z-index: 7;
+    background-color: white; */
+    
+    /* box-shadow: 0 1px 8px #81d4da; */
 }
 
 #logo {
     color: #fb0404;
-    /* font-size: 9vw; */
+    font-size: 1.3rem;
 }
 
 header li {
     list-style: none;
     display: inline-block;
+    font-size: 1.1rem;
+
+    padding: 0 0.7rem;
 }
 
 /* ***check if this is needed, or duplicated elsewhere*** */
@@ -110,6 +121,7 @@ textarea {
 .footer-links {
     text-align: center;
     border-top: 1px solid black;
+    /* box-shadow: 0 -1px 6px #81d4da; */
 }
 
 .footer-links>li {
