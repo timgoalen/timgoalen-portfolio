@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -14,18 +14,25 @@ body {
     font-weight: 300;
 }
 
-img {
-    width: 100%;
-}
-
 header,
 main {
     padding: 0 4%;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 4%;
+}
+
 #logo {
     color: #fb0404;
     /* font-size: 9vw; */
+}
+
+header li {
+    list-style: none;
+    display: inline-block;
 }
 
 /* ***check if this is needed, or duplicated elsewhere*** */
@@ -42,34 +49,9 @@ h2 {
     font-size: 4rem;
 }
 
-/* Navigation - based on https://www.w3schools.com/howto/howto_js_topnav_responsive.asp */
-
-/* .navigation {
-    overflow: hidden;
+img {
+    width: 100%;
 }
-
-.navigation a {
-    float: right;
-    display: block;
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem;
-    padding: 14px 16px;
-}
-
-.navigation a:hover {
-    background-color: #ddd;
-}
-
-.navigation a.active {
-    background-color: #85c9ca;
-    color: white;
-}
-
-.navigation .burger-bars-icon {
-    display: none;
-} */
-
 
 #credits img {
     margin: 9% 0 2% 0;
