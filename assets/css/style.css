@@ -158,6 +158,8 @@ textarea {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1% 4%;
+        /* ***FIND REPLACEMENT FOR THIS*** */
+        overflow: hidden;
     }
 
     figcaption {
