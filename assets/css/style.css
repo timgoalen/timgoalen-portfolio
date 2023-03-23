@@ -35,13 +35,13 @@ main {
 
 #logo {
     color: #fb0404;
-    font-size: 1.3rem;
+    font-size: calc(1rem + 0.5vw);
 }
 
 .navbar-links ul {
     list-style-type: none;
     display: flex;
-    font-size: 1.1rem;
+    font-size: calc(0.8rem + 0.5vw);
     gap: 2rem;
 }
 
@@ -71,8 +71,8 @@ a {
     height: 1.5rem;
     width: 1.5rem;
     position: absolute;
-    top: 0.75rem;
-    right: 0.75rem;
+    top: 1rem;
+    right: 1rem;
 }
 
 #responsiveMenuToggleButton .openIcon {
