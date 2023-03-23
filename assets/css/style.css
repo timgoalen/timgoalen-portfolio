@@ -14,23 +14,23 @@ body {
     font-weight: 300;
 }
 
-header,
 main {
     padding: 0 4%;
+    /* margin-top: 64px; */
 }
 
-header {
+/* Navbar, inspired by https://www.youtube.com/watch?v=c9jNIYQ1IuI*/
+
+.navbar {
+    /* position: fixed; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
+    background-color: white;
     padding: 2% 4%;
-
-    /* position: fixed;
-    width: 100%;
-    z-index: 7;
-    background-color: white; */
-    
-    /* box-shadow: 0 1px 8px #81d4da; */
+    align-items: baseline;
+    /* top: 0;
+    z-index: 2; */
 }
 
 #logo {
@@ -38,19 +38,92 @@ header {
     font-size: 1.3rem;
 }
 
-header li {
+.navbar-links ul {
+    list-style-type: none;
+    display: flex;
+    font-size: 1.1rem;
+    gap: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#responsiveMenuToggleButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#responsiveMenuToggleButton svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+}
+
+#responsiveMenuToggleButton .openIcon {
+    display: block;
+}
+
+#responsiveMenuToggleButton .closeIcon {
+    display: none;
+
+}
+
+#responsiveMenuToggleButton.open .openIcon {
+    display: none;
+
+}
+
+#responsiveMenuToggleButton.open .closeIcon {
+    display: block;
+}
+
+
+
+/* header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2% 4%; */
+
+/* position: fixed;
+    width: 100%;
+    z-index: 7;
+    background-color: white; */
+
+/* box-shadow: 0 1px 8px #81d4da; */
+/* } */
+
+/* NOT USED IN THIS NAV BAR VERSION */
+/* #logo {
+    color: #fb0404;
+    font-size: 1.3rem;
+} */
+
+/* header li {
     list-style: none;
     display: inline-block;
     font-size: 1.1rem;
 
     padding: 0 0.7rem;
-}
+} */
 
 /* ***check if this is needed, or duplicated elsewhere*** */
-a {
+/* a {
     text-decoration: none;
     color: black;
-}
+} */
+
+
+/* About section */
 
 h2 {
     text-align: center;
@@ -174,7 +247,7 @@ textarea {
     audio {
         width: 42%;
     }
-    
+
     #contact {
         margin: auto;
         width: 70%;
@@ -186,4 +259,32 @@ textarea {
     main {
         padding: 0 15%;
     }
+}
+
+/* Navbar media query */
+@media screen and (max-width: 670px) {
+
+    #responsiveMenuToggleButton {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar-links.open {
+        display: block;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
 }

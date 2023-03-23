@@ -1,13 +1,19 @@
-// Nav bar base on tutorial - https://www.w3schools.com/howto/howto_js_topnav_responsive.asp
-// Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon 
+const responsiveMenuButton = document.getElementById('responsiveMenuToggleButton');
 
+const navBarLinks = document.querySelector('.navbar-links');
 
-// function myFunction() {
-//     var x = document.getElementById("myTopnav");
-//     if (x.className === "navigation") {
-//       x.className += " responsive";
-//     } else {
-//       x.className = "navigation";
-//     }
-//   }
+responsiveMenuButton.addEventListener('click', () => {
+    navBarLinks.classList.toggle('open');
+    responsiveMenuButton.classList.toggle('open');
+});
 
+// Pause all audio script, from
+
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+        if(audios[i] != e.target){
+            audios[i].pause();
+        }
+    }
+}, true);
