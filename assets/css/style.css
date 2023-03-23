@@ -45,6 +45,13 @@ main {
     gap: 2rem;
 }
 
+.navbar-links a:hover,
+label:hover,
+input:hover,
+footer a:hover {
+    color: rgb(98, 188, 240);
+}
+
 a {
     text-decoration: none;
     color: black;
