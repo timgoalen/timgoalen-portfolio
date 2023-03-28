@@ -2,6 +2,10 @@
 
 /* General styles */
 
+html {
+    scroll-behavior: smooth
+    }
+
 * {
     margin: 0;
     padding: 0;
@@ -15,22 +19,22 @@ body {
 }
 
 main {
-    padding: 0 4%;
-    /* margin-top: 64px; */
+    padding: 2% 4% 0 4%;
+    margin-top: calc(1.6rem + 0.5vw);
 }
 
 /* Navbar, inspired by https://www.youtube.com/watch?v=c9jNIYQ1IuI*/
 
 .navbar {
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: white;
     padding: 2% 4%;
     align-items: baseline;
-    /* top: 0;
-    z-index: 2; */
+    top: 0;
+    z-index: 2;
 }
 
 #logo {
