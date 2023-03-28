@@ -59,6 +59,11 @@ a {
     color: black;
 }
 
+/* Underline active section solution from https://www.w3schools.com/howto/howto_js_active_element.asp */
+.active {
+    color: rgb(98, 188, 240);
+}
+
 #responsiveMenuToggleButton {
     background-color: transparent;
     border: 0;
