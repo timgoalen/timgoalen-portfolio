@@ -23,7 +23,7 @@ main {
     margin-top: calc(1.6rem + 0.5vw);
 }
 
-/* Navbar, inspired by https://www.youtube.com/watch?v=c9jNIYQ1IuI*/
+/* Navbar, inspired by https://www.youtube.com/watch?v=c9jNIYQ1IuI */
 
 .navbar {
     position: fixed;
@@ -59,18 +59,13 @@ a {
     color: black;
 }
 
-/* Underline active section solution from https://www.w3schools.com/howto/howto_js_active_element.asp */
-.active {
-    color: rgb(98, 188, 240);
-}
-
 #responsiveMenuToggleButton {
     background-color: transparent;
     border: 0;
     cursor: pointer;
     display: none;
     position: absolute;
-    top: 1%;
+    /* top: 1%; */
     right: 4%;
 }
 
@@ -100,7 +95,10 @@ a {
     display: block;
 }
 
-/* About section */
+/* Underline active section solution from https://www.w3schools.com/howto/howto_js_active_element.asp */
+.active {
+    color: rgb(98, 188, 240);
+}
 
 h2 {
     text-align: center;
@@ -109,6 +107,17 @@ h2 {
     font-weight: 100;
     font-size: 4rem;
 }
+
+/* About section */
+
+/* Listen section */
+
+audio {
+    display: block;
+    margin: 0 auto 4% auto;
+}
+
+/* Credits section */
 
 img {
     width: 100%;
@@ -139,6 +148,18 @@ img {
 
 p {
     margin: 1rem 0;
+    animation-duration: 2s;
+    animation-name: opacity-fade-in;
+}
+
+@keyframes opacity-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .about-grid-container {
@@ -148,11 +169,6 @@ p {
 .about-text {
     font-size: 1.1rem;
     line-height: 1.5;
-}
-
-audio {
-    display: block;
-    margin: 0 auto 4% auto;
 }
 
 /* Contact section */
@@ -286,6 +302,7 @@ textarea:hover {
         flex-direction: column;
         padding: 1rem;
         align-items: flex-end;
+        transition: all 2s;
     }
 
 }
