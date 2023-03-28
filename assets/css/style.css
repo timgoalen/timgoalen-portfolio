@@ -4,7 +4,7 @@
 
 html {
     scroll-behavior: smooth
-    }
+}
 
 * {
     margin: 0;
@@ -50,8 +50,6 @@ main {
 }
 
 .navbar-links a:hover,
-label:hover,
-input:hover,
 footer a:hover {
     color: rgb(98, 188, 240);
 }
@@ -154,6 +152,11 @@ audio {
 
 /* Contact section */
 
+#contact {
+    /* padding-bottom: 30%; */
+    min-height: 85vh;
+}
+
 input,
 textarea {
     width: 100%;
@@ -161,11 +164,13 @@ textarea {
     font-size: 1.1rem;
     line-height: 1.5;
     font-family: 'Poppins', sans-serif;
+    border: 1px solid darkgray;
+    border-radius: 3px;
 }
 
-#contact {
-    /* padding-bottom: 30%; */
-    min-height: 85vh;
+input:hover,
+textarea:hover {
+    box-shadow: 0px 0px 22px 0 rgb(98, 188, 240);
 }
 
 /* Footer */
