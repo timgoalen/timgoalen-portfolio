@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 :root {
-    --header-height: calc(1rem + 0.5vw + 5%);
+    --header-height: calc(1rem + 0.5vw + 3%);
 }
 
 /* General styles */
@@ -390,7 +390,7 @@ textarea:hover {
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
-        font-size: calc(1.2rem + 0.5vw);
+        font-size: calc(1rem + 0.5vw);
         padding: 1rem;
         align-items: flex-end;
         transition: all 2s;
