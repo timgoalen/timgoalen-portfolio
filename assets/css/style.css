@@ -219,6 +219,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     color: #fb0404;
+    border: 1px solid #fb0404;
 }
 
 input:hover,
