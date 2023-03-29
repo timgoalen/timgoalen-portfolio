@@ -322,6 +322,7 @@ textarea:hover {
     .navbar-links ul {
         width: 100%;
         flex-direction: column;
+        font-size: calc(1.2rem + 0.5vw);
         padding: 1rem;
         align-items: flex-end;
         transition: all 2s;
