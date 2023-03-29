@@ -241,6 +241,7 @@ textarea:hover {
 }
 
 /* Media queries */
+
 @media screen and (min-width: 460px) {
     .about-image {
         padding: 0 12%;
@@ -288,8 +289,7 @@ textarea:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1% 4%;
-        /* ***FIND REPLACEMENT FOR THIS*** */
-        overflow: hidden;
+        overflow: hidden; /* ***FIND REPLACEMENT FOR THIS*** */
     }
 
     figcaption {
@@ -331,12 +331,12 @@ textarea:hover {
     }
 }
 
-@media screen and (min-width: 1138px) {
+/* @media screen and (min-width: 1138px) {
     .about-image {
         align-self: center;
         padding-top: 0;
     }
-}
+} */
 
 @media screen and (min-width: 1200px) {    
     main {
