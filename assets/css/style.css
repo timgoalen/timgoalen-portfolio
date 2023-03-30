@@ -340,6 +340,11 @@ textarea:hover {
     #credits img {
         margin: 0;
     }
+
+    #contact {
+        /* margin-top value is workaround for grid overflow bug */
+        margin: 19% auto 0;
+    }
 }
 
 @media screen and (min-width: 724px) {
