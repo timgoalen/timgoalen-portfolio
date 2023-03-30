@@ -4,17 +4,14 @@
     --header-height: calc(1rem + 0.5vw + 3%);
 }
 
-/* General styles */
-
-html {
-    scroll-behavior: smooth
-}
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* outline: 1px solid red; */
+}
+
+html {
+    scroll-behavior: smooth
 }
 
 body {
@@ -22,16 +19,11 @@ body {
     font-weight: 300;
 }
 
-main {
-    padding: 2% 4% 0 4%;
-}
-
 /* Navbar, inspired by https://www.youtube.com/watch?v=c9jNIYQ1IuI */
 
 header {
     position: fixed;
     width: 100%;
-    /* height: 5%; */
     height: var(--header-height);
     background-color: white;
     top: 0;
@@ -43,7 +35,6 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    /* height: 100%; */
     justify-content: space-between;
     background-color: white;
     padding: 2% 4%;
@@ -81,7 +72,6 @@ a {
     cursor: pointer;
     display: none;
     position: absolute;
-    /* top: 1%; */
     right: 4%;
 }
 
@@ -109,13 +99,12 @@ a {
     display: block;
 }
 
-/* Underline active section solution from https://www.w3schools.com/howto/howto_js_active_element.asp */
+/* underline active section solution from https://www.w3schools.com/howto/howto_js_active_element.asp */
 .active {
     color: rgb(98, 188, 240);
 }
 
-/* To make space for fixed nav bar */
-
+/* to make space for fixed nav bar */
 #about,
 #listen,
 #credits,
@@ -123,65 +112,38 @@ a {
     padding-top: calc(var(--header-height) + 2.5%);
 }
 
-/* workaround for grid overflow bug */
-/* #contact {
-    margin-top: 25%;
-} */
+/* Main content */
+
+main {
+    padding: 2% 4% 0 4%;
+}
 
 h2 {
     text-align: center;
-    margin-bottom: 3%;
     text-transform: uppercase;
     font-weight: 100;
     font-size: calc(4rem + 0.5vw);
+    margin-bottom: 3%;
+}
+
+img {
+    width: 100%;
 }
 
 /* About section */
+
+.about-grid-container {
+    margin-top: 3%;
+}
 
 .about-image {
     animation-duration: 3s;
     animation-name: opacity-fade-in;
 }
 
-/* Listen section */
-
-audio {
-    display: block;
-    height: 2.5rem;
-    margin: 0 auto 4% auto;
-}
-
-/* Credits section */
-
-img {
-    width: 100%;
-}
-
-#credits h3 {
-    margin-bottom: 1%;
-}
-
-#credits img {
-    margin: 9% 0 2% 0;
-}
-
-/* ***re-write this selector*** */
-#credits #first-credits-img {
-    margin-top: 0;
-}
-
-#credits ul {
-    list-style-type: none;
-    line-height: 2rem;
-}
-
-#credits p {
-    font-size: 0.7rem;
-    margin: 0.7rem 0;
-}
-
-.credits-channel-text {
-    font-weight: 500;
+.about-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
 }
 
 p {
@@ -205,19 +167,45 @@ p {
     }
 }
 
-.about-grid-container {
-    margin-top: 3%;
+/* Listen section */
+
+audio {
+    display: block;
+    height: 2.5rem;
+    margin: 0 auto 4% auto;
 }
 
-.about-text {
-    font-size: 1.1rem;
-    line-height: 1.5;
+/* Credits section */
+
+#credits h3 {
+    margin-bottom: 1%;
+}
+
+#credits img {
+    margin: 9% 0 2% 0;
+}
+
+#credits #first-credits-img {
+    margin-top: 0;
+}
+
+#credits ul {
+    list-style-type: none;
+    line-height: 2rem;
+}
+
+#credits p {
+    font-size: 0.7rem;
+    margin: 0.7rem 0;
+}
+
+.credits-channel-text {
+    font-weight: 500;
 }
 
 /* Contact section */
 
 #contact {
-    /* padding-bottom: 30%; */
     min-height: 90vh;
 }
 
@@ -239,7 +227,6 @@ input[type=submit] {
     margin-top: 1rem;
     border: 1px solid black;
     background-color: white;
-
 }
 
 input[type=submit]:hover {
@@ -253,6 +240,7 @@ textarea:hover {
 }
 
 /* Message-received.html and 404.html pages */
+
 .message-received-main,
 .error404-page-main {
     padding-top: 30vh;
@@ -271,7 +259,6 @@ textarea:hover {
 .footer-links {
     text-align: center;
     border-top: 1px solid black;
-    /* box-shadow: 0 -1px 6px #81d4da; */
 }
 
 .footer-links>li {
@@ -289,10 +276,6 @@ textarea:hover {
 }
 
 @media screen and (min-width: 600px) {
-    main {
-        /* padding: 0 10%; */
-    }
-
     .about-image {
         grid-area: left;
     }
@@ -329,11 +312,9 @@ textarea:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1% 4%;
-        /* overflow: hidden; */
     }
 
     figcaption {
-        /* padding-left: 30%; */
         text-align: center;
     }
 
@@ -377,13 +358,6 @@ textarea:hover {
     }
 }
 
-/* @media screen and (min-width: 1138px) {
-    .about-image {
-        align-self: center;
-        padding-top: 0;
-    }
-} */
-
 @media screen and (min-width: 1200px) {
     main {
         padding: 0 15%;
@@ -404,7 +378,6 @@ textarea:hover {
 
     .navbar {
         flex-direction: column;
-        /* align-items: flex-start; */
     }
 
     .navbar-links {
