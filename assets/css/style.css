@@ -64,7 +64,8 @@ header {
 }
 
 .navbar-links a:hover,
-footer a:hover {
+footer a:hover,
+.message-received-return-home:hover {
     color: rgb(98, 188, 240);
 }
 
@@ -97,12 +98,10 @@ a {
 
 #responsiveMenuToggleButton .closeIcon {
     display: none;
-
 }
 
 #responsiveMenuToggleButton.open .openIcon {
     display: none;
-
 }
 
 #responsiveMenuToggleButton.open .closeIcon {
@@ -245,6 +244,18 @@ input[type=submit]:hover {
 input:hover,
 textarea:hover {
     box-shadow: 0px 0px 22px 0 rgb(98, 188, 240);
+}
+
+/* Message-received.html page */
+.message-received-main {
+    padding-top: 30vh;
+    height: 90vh;
+    text-align: center;
+}
+
+.message-received-confirmation {
+    text-transform: none;
+    font-size: calc(1.5rem + 0.5vw);
 }
 
 /* Footer */
