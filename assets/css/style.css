@@ -185,6 +185,11 @@ p {
     animation-name: opacity-fade-in;
 }
 
+:target {
+    animation-duration: 1s;
+    animation-name: opacity-fade-in;
+}
+
 @keyframes opacity-fade-in {
     from {
         opacity: 0;
