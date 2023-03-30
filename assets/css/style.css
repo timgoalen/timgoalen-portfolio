@@ -122,6 +122,11 @@ a {
     padding-top: calc(var(--header-height) + 2.5%);
 }
 
+/* workaround for grid overflow bug */
+/* #contact {
+    margin-top: 25%;
+} */
+
 h2 {
     text-align: center;
     margin-bottom: 3%;
@@ -321,8 +326,7 @@ textarea:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1% 4%;
-        overflow: hidden;
-        /* ***FIND REPLACEMENT FOR THIS*** */
+        /* overflow: hidden; */
     }
 
     figcaption {
@@ -359,7 +363,8 @@ textarea:hover {
     }
 
     #contact {
-        margin: auto;
+        /* margin-top value is workaround for grid overflow bug */
+        margin: 18% auto 0;
         width: 70%;
     }
 }
