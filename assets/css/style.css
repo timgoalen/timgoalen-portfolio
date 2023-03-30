@@ -119,7 +119,7 @@ a {
 #listen,
 #credits,
 #contact {
-    padding-top: var(--header-height);
+    padding-top: calc(var(--header-height) + 2.5%);
 }
 
 h2 {
