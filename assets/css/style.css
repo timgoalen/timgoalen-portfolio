@@ -25,7 +25,7 @@ header {
     position: fixed;
     width: 100%;
     height: var(--header-height);
-    background-color: white;
+    background-color: #FFF;
     top: 0;
     z-index: 2;
 }
@@ -36,14 +36,14 @@ header {
     top: 0;
     width: 100%;
     justify-content: space-between;
-    background-color: white;
+    background-color: #FFF;
     padding: 2% 4%;
     align-items: baseline;
     z-index: 2;
 }
 
 #logo {
-    color: #fb0404;
+    color: #EC0404;
     font-size: calc(1rem + 0.5vw);
 }
 
@@ -58,12 +58,12 @@ header {
 footer a:hover,
 .message-received-return-home:hover,
 .error404-page-return-home:hover {
-    color: rgb(98, 188, 240);
+    color: #1076B1;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000;
 }
 
 #responsiveMenuToggleButton {
@@ -101,7 +101,7 @@ a {
 
 /* underline active section solution from https://www.w3schools.com/howto/howto_js_active_element.asp */
 .active {
-    color: rgb(98, 188, 240);
+    color: #1076B1;
 }
 
 /* to make space for fixed nav bar */
@@ -225,18 +225,18 @@ input[type=submit] {
     cursor: pointer;
     font-size: 1.2rem;
     margin-top: 1rem;
-    border: 1px solid black;
-    background-color: white;
+    border: 1px solid #000;
+    background-color: #FFF;
 }
 
 input[type=submit]:hover {
-    color: #fb0404;
-    border: 1px solid #fb0404;
+    color: #EC0404;
+    border: 1px solid #EC0404;
 }
 
 input:hover,
 textarea:hover {
-    box-shadow: 0px 0px 22px 0 rgb(98, 188, 240);
+    box-shadow: 0px 0px 22px 0 #1076B1;
 }
 
 /* Message-received.html and 404.html pages */
@@ -258,7 +258,7 @@ textarea:hover {
 
 .footer-links {
     text-align: center;
-    border-top: 1px solid black;
+    border-top: 1px solid #000;
 }
 
 .footer-links>li {
