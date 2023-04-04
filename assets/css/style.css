@@ -13,7 +13,8 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -59,14 +60,20 @@ header {
 }
 
 .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     position: fixed;
     top: 0;
     width: 100%;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     background-color: #FFF;
     padding: 2% 4%;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
     z-index: 2;
 }
 
@@ -77,6 +84,8 @@ header {
 
 .navbar-links ul {
     list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     font-size: calc(0.8rem + 0.5vw);
     gap: 2rem;
@@ -142,20 +151,36 @@ footer a:hover,
 }
 
 .about-image {
-    animation-duration: 3s;
-    animation-name: opacity-fade-in;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+    -webkit-animation-name: opacity-fade-in;
+            animation-name: opacity-fade-in;
 }
 
 .about-text {
     font-size: 1.1rem;
     line-height: 1.5;
-    animation-duration: 2s;
-    animation-name: opacity-fade-in;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-name: opacity-fade-in;
+            animation-name: opacity-fade-in;
 }
 
 :target {
-    animation-duration: 1s;
-    animation-name: opacity-fade-in;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+    -webkit-animation-name: opacity-fade-in;
+            animation-name: opacity-fade-in;
+}
+
+@-webkit-keyframes opacity-fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes opacity-fade-in {
@@ -237,7 +262,8 @@ input[type=submit]:hover {
 
 input:hover,
 textarea:hover {
-    box-shadow: 0px 0px 22px 0 #1076B1;
+    -webkit-box-shadow: 0px 0px 22px 0 #1076B1;
+            box-shadow: 0px 0px 22px 0 #1076B1;
 }
 
 /* || Message-received.html and 404.html pages */
@@ -294,10 +320,13 @@ textarea:hover {
     }
 
     .about-grid-container {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 38% 4% 58%;
         grid-template-columns: 38% 58%;
+        -ms-grid-rows: auto 0 auto 0 auto;
         grid-template-rows: repeat(3, auto);
-        grid-template-areas:
+            grid-template-areas:
             "top top"
             "left rightmid"
             ". rightbot";
@@ -305,12 +334,16 @@ textarea:hover {
     }
 
     .about-image {
-        align-self: start;
+        -ms-flex-item-align: start;
+            -ms-grid-row-align: start;
+            align-self: start;
         padding-top: 10%;
     }
 
     .credits-grid-container {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 4% 1fr;
         grid-template-columns: 1fr 1fr;
         gap: 1% 4%;
     }
@@ -329,9 +362,33 @@ textarea:hover {
     }
 }
 
+@media screen and (min-width: 600px){
+
+    .about-image {
+        -ms-grid-row: 3;
+        -ms-grid-column: 1;
+    }
+
+    .about-title {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+
+    .about-para-1 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+
+    .about-para-2 {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
+    }
+}
+
 @media screen and (min-width: 724px) {
     .about-grid-container {
-        grid-template-areas:
+            grid-template-areas:
             "top top"
             "left rightmid"
             "left rightbot";
@@ -340,6 +397,24 @@ textarea:hover {
 
     .about-image {
         padding-top: 8%;
+    }
+    .about-image {
+        -ms-grid-row: 3;
+        -ms-grid-row-span: 3;
+        -ms-grid-column: 1;
+    }
+    .about-title {
+        -ms-grid-row: 1;
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 3;
+    }
+    .about-para-1 {
+        -ms-grid-row: 3;
+        -ms-grid-column: 3;
+    }
+    .about-para-2 {
+        -ms-grid-row: 5;
+        -ms-grid-column: 3;
     }
 }
 
@@ -378,7 +453,10 @@ textarea:hover {
     }
 
     .navbar {
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .navbar-links {
@@ -392,10 +470,17 @@ textarea:hover {
 
     .navbar-links ul {
         width: 100%;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         font-size: calc(1rem + 0.5vw);
         padding: 1rem;
-        align-items: flex-end;
+        -webkit-box-align: end;
+            -ms-flex-align: end;
+                align-items: flex-end;
+        -webkit-transition: all 2s;
+        -o-transition: all 2s;
         transition: all 2s;
     }
 }
