@@ -56,7 +56,11 @@
         <section id="about">
             <div class="about-grid-container">
                 <div class="about-image">
-                    <img src="assets/images/about-image.webp" width="750" height="828" alt="Tim Goalen">
+                    <picture>
+                        <source srcset="assets/images/about-image.webp" type="image/webp" width="750" height="828">
+                        <source srcset="assets/images/about-image.png" type="image/jpeg" width="750" height="828">
+                        <img src="assets/images/about-image.png" width="750" height="828" alt="Tim Goalen">
+                    </picture>
                 </div>
                 <div class="about-title">
                     <h2>About</h2>
