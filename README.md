@@ -1,6 +1,6 @@
 <h1 align="center">Tim Goalen - Composer Website</h1>
 
-[View the live project here.](https://timgoalen.github.io/tg-composer-portfolio)
+[View the live project here](https://timgoalen.github.io/tg-composer-portfolio)
 
 **TIM GOALEN *composer*** is a portfolio website for myself that showcases my work as a TV composer. The goal of this website is to provide a place where TV professionals (directors, producers, production managers etc.) can find my credits, listen to my work and contact me easily; and for audience members to listen to music from programmes they’ve seen and get in touch.
 
@@ -10,28 +10,23 @@
 
 -   ### User stories
 
-    -   #### First Time Visitor Goals
+    -   #### TV Professional Visitor Goals
 
         1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
         2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
         3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
 
-    -   #### Returning Visitor Goals
+    -   #### Audience Member Visitor Goals
 
         1. As a Returning Visitor, I want to find information about coding challenges.
         2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
         3. As a Returning Visitor, I want to find community links.
 
-    -   #### Frequent User Goals
-        1. As a Frequent User, I want to check to see if there are any newly added challenges or hackathons.
-        2. As a Frequent User, I want to check to see if there are any new blog posts.
-        3. As a Frequent User, I want to sign up to the Newsletter so that I am emailed any major updates and/or changes to the website or organisation.
-
 -   ### Design
-    -   #### Colour Scheme
-        -   The two main colours used are Code Insititue red, and white.
     -   #### Typography
         -   The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+    -   #### Colour Scheme
+        -   The two main colours used are Code Insititue red, and white.
     -   #### Imagery
         -   Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
 
@@ -45,9 +40,29 @@
 
 ## Features
 
--   Responsive on all device sizes
+-   ### Navigation
+    - explanation & image
 
--   Interactive elements
+-   ### About
+    - explanation & image
+
+-   ### Listen
+    - explanation & image
+
+-   ### Credits
+    - explanation & image
+
+-   ### Contact
+    - explanation & image
+
+-   ### Footer
+    - explanation & image
+
+-   ### Message Received Page
+    - explanation & image
+
+-   ### 404 Error Page
+    - explanation & image
 
 ## Technologies Used
 
@@ -57,20 +72,18 @@
 -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
 -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-### Frameworks, Libraries & Programs Used
+### Libraries & Programs Used
 
-1. [Google Fonts:](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-1. [Font Awesome:](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
 1. [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
 1. [GitHub:](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-1. [Photoshop:](https://www.adobe.com/ie/products/photoshop.html)
-    - Photoshop was used to create the logo, resizing images and editing photos for the website.
-1. [Balsamiq:](https://balsamiq.com/)
-    - Balsamiq was used to create the [wireframes](https://github.com/) during the design process.
+1. [Google Fonts:](https://fonts.google.com/)
+    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
+1. [Font Awesome:](https://fontawesome.com/)
+    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+1. etc.
+
 
 ## Testing
 
