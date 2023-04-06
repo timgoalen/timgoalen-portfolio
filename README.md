@@ -4,6 +4,16 @@
 
 **TIM GOALEN *composer*** is a portfolio website for myself that showcases my work as a TV composer. The goal of this website is to provide a place where TV professionals (directors, producers, production managers etc.) can find my credits, listen to my work and contact me easily; and for audience members to listen to music from programmes they’ve seen and get in touch.
 
+[!!MERGE THESE 2 INTRO SECTIONS!!]
+
+User 1-
+
+Director/producer looking to find my composer credits/ showreel and get in touch to speak about a project
+
+User 2-
+
+TV audience member looking to listen to music heard on a programme and perhaps get in touch to say they liked it
+
 ![Image of the website on multiple devices](documentation/responsive-site-preview.png)
 
 ## User Experience
@@ -38,9 +48,9 @@ The site has a contemporary mimimalist aesthetic, based on a monochrome colour p
 ![Image of the colour palette](documentation/colour-palette.png)
 
 ### Typography
-The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.
+~~The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.~~
 ### Imagery
-Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.
+~~Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.~~
 
 ## Features
 
@@ -49,18 +59,28 @@ Mobile-first approach, using responsive units (%, vh and vw) wherever possible, 
 ### Navigation Bar
 ![Image of the navigation bar](documentation/desktop-navbar.png)
 
+- A fixed navigation bar is available on every page. 
+- Clicking a link takes the user to the desired page section with a smooth scroll effect, and triggers an opacity transition in the selected section, via a `:target` pseudo-class selector.
+- The text turns blue as the cursor hovers over it, and remains blue after being clicked to indicate the users current position within the page.
+
 ### Mobile Navigation Menu
 ![Image of the mobile navigation menu](documentation/mobile-nav-menu.png)
 
-smooth scrolling & opacity transition on site load & section scroll via ":target" pseudo-class
+- On mobile screens the navigation is displayed as an expandable menu via a hamburger icon.
+- Once a destination is clicked the menu collapses.
 
 ### About
 ![Image of the about section](documentation/about-section.png)
 
-explanation & image
+- Diplayed as one column on mobile screens and two columns on tablet screens and larger.
+- Features a headshot and two paragraphs of work highlights.
 
 ### Listen
 ![Image of the listen section](documentation/listen-section.png)
+
+- A seven-track audio showreel, made with HTML `<audio>` elements.
+- 
+- Importantly for UX, JavaScript is used to pause the currently playing audio element if another is played.
 
 explanation & image
 
@@ -95,12 +115,16 @@ explanation & image
     -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Git](https://git-scm.com/)
     - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-- [GitHub:](https://github.com/)
+- [GitHub](https://github.com/)
     - GitHub is used to store the projects code after being pushed from Git.
-- [Google Fonts:](https://fonts.google.com/)
+- [Google Fonts](https://fonts.google.com/)
     - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-- [Font Awesome:](https://fontawesome.com/)
+- [Font Awesome](https://fontawesome.com/)
     - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
+- birme - https://www.birme.net/
+- https://autoprefixer.github.io/ 
+- tinyPNG
+- https://pagespeed.web.dev
 - etc.
 
 ## Testing
