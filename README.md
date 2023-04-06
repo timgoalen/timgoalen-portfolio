@@ -79,7 +79,6 @@ Mobile-first approach, using responsive units (%, vh and vw) wherever possible, 
 ![Image of the listen section](documentation/listen-section.png)
 
 - A seven-track audio showreel, made with HTML `<audio>` elements.
-- 
 - Importantly for UX, JavaScript is used to pause the currently playing audio element if another is played.
 
 explanation & image
@@ -135,6 +134,9 @@ Syntax errors were tested for with W3C Markup Validator and W3C CSS Validator. N
 ***RUN THIS AGAIN - 'controlslist' errors shown on audio elements
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftimgoalen.github.io%2Ftg-composer-portfolio%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
+after the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements, as is an experimental attribute and would fail the test. had it for `nodownload` and `noplaybackrate`. In future I will build a custom audio player for the site using JavaScript.
+
+
 ### Lighthouse
 
 !!!SHOW IMAGES & RESULTS
@@ -154,7 +156,33 @@ Syntax errors were tested for with W3C Markup Validator and W3C CSS Validator. N
     - Firefox (??)
 
 ### Manual Testing of User Actions
-| Feature | Action | Expected Behaviour | Pass/Fail
+| Feature | Action | Expected Behaviour | Pass/fail |
+|---|---|---|---|
+| Navbar | Click on logo | Navigates back to the top of the page | PASS |
+| Navbar | Click on "About" | Scrolls to the "About" section | PASS |
+| Navbar | Click on "Listen" | Scrolls to the "Listen" section | PASS |
+| Navbar | Click on "Credits" | Scrolls to the "Credits" section | PASS |
+| Navbar | Click on "Contact" | Scrolls to the "Contact" section | PASS |
+| Mobile menu | Click on hamburger icon | Shows navigation menu and icon changes to "X" | PASS |
+| Mobile menu | Click on "X" icon | Collapses navigation menu | PASS |
+| Mobile menu | Click on link | Navigates to the selected section and menu collapses | PASS |
+| Listen | Click on a play button | Plays an audio element | PASS |
+| Listen | Click on a pause button | Pauses an audio element | PASS |
+| Listen | Click on a transport slider | Navigates to the selected position in the audio file (once buffered) | PASS |
+| Listen | Click on a volume icon | Opens the volume control | PASS |
+| Listen | Click on the expanded controls three dots | Opens the "Download" and "Playback speed" controls | PASS |
+| Listen | Click on a play button when another audio element is playing | Mutes the previously playing audio element | PASS |
+| Contact | Click on the "Send" button without filling in the "Name" field | Shows an error message pointing to the "Name" field | PASS |
+| Contact | Click on the "Send" button without filling in the "Email" field | Shows an error message pointing to the "Email" field | PASS |
+| Contact | Click on the "Send" button without including an @ in the "Email" field | Shows an error message pointing to the "Email" field | PASS |
+| Contact | Click on the "Send" button without filling in the "Message" field | Shows an error message pointing to the "Message" field | PASS |
+| Contact | Click on the "Send" button | Sends the form and navigates to the "message-received-page.html" | PASS |
+| Footer | Click on the Spotify icon | Opens Tim Goalen's Spotify page in a new tab | PASS |
+| Footer | Click on the Twitter icon | Opens Tim Goalen's Twitter page in a new tab | PASS |
+| Footer | Click on the IMDb icon | Opens Tim Goalen's IMDb page in a new tab | PASS |
+| Message Received Page | Click on the "Home" link | Navigates back to the top of the main page | PASS |
+| 404 Page | Enter an non-existing url within the site | Displays the "404.html" page | PASS |
+| 404 Page | Click on the "Home" link | Navigates back to the top of the main page | PASS |
 
 
 ### Known Bugs
