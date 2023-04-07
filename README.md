@@ -33,13 +33,17 @@ TV audience member looking to listen to music heard on a programme and perhaps g
         3. As a Returning Visitor, I want to find community links.
 
 ## Design
-The design is based on an original prototype that I made using Squarespace.
+The design is based on an original prototype that I previously built using Squarespace.
 
 [View the prototype Squarespace site here](https://www.timgoalen.com)
 
 Reasons for needing update (RE-WRITE)...INCL. cheaper to maintain; improve site accesibility/performance; future more maintainable/updatable.
 
 Changed from multi-page design in the prototype, to single-page design, with sections linked in the navigation to...(explanation)
+- higher lighhouse scores
+- better accesibility
+- improved colout schee and use ineractions (hover effects, transitions etc.)
+- decided against a stand-alone landing page, instead having the 'About' section at the top of the page. to imrpove UX by taking the user directly to content [[***re-edit all this]]
 
 ### Colour Scheme
 
@@ -49,6 +53,9 @@ The site has a contemporary mimimalist aesthetic, based on a monochrome colour p
 
 ### Typography
 ~~The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.~~
+
+oversized section titles, with thin 100-weight font.
+
 ### Imagery
 ~~Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.~~
 
@@ -73,7 +80,7 @@ Mobile-first approach, using responsive units (%, vh and vw) wherever possible, 
 ![Image of the about section](documentation/about-section.png)
 
 - Diplayed as one column on mobile screens and two columns on tablet screens and larger.
-- Features a headshot and two paragraphs of work highlights.
+- Features a headshot and two paragraphs detailing work highlights.
 
 ### Listen
 ![Image of the listen section](documentation/listen-section.png)
@@ -81,19 +88,15 @@ Mobile-first approach, using responsive units (%, vh and vw) wherever possible, 
 - A seven-track audio showreel, made with HTML `<audio>` elements.
 - Importantly for UX, JavaScript is used to pause the currently playing audio element if another is played.
 
-explanation & image
 
 ### Credits
 ![Image of the credits section](documentation/credits-section.png)
 
-explanation & image
-
+- List of selected credits, with official photos, programme title, production company, runtime and broadcaster information.
+- Single-column layout on mobile devices and two columns on desktop screens.
 ### Contact & Footer
 ![Image of the contact section with footer](documentation/contact-section.png)
 
-explanation & image
-
-### Footer (USE ABOVE INSTEAD??)
 explanation & image
 
 ### Message Received Page
@@ -124,6 +127,9 @@ explanation & image
 - https://autoprefixer.github.io/ 
 - tinyPNG
 - https://pagespeed.web.dev
+- favicon
+- wave
+- contrast checker
 - etc.
 
 ## Testing
@@ -134,10 +140,11 @@ Syntax errors were tested for with W3C Markup Validator and W3C CSS Validator. N
 ***RUN THIS AGAIN - 'controlslist' errors shown on audio elements
 -   [W3C CSS Validator](https://jigsaw.w3.org/css-validator) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftimgoalen.github.io%2Ftg-composer-portfolio%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
 
-after the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements, as is an experimental attribute and would fail the test. had it for `nodownload` and `noplaybackrate`. In future I will build a custom audio player for the site using JavaScript.
+after the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements, as is an experimental attribute and would fail the test. had it for `nodownload` and `noplaybackrate`, for diabling the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
 
+[PROB SHOW THESE IN COLLAPSABLE MENU]
 
-### Lighthouse
+### Lighthouse / Page-speed?
 
 !!!SHOW IMAGES & RESULTS
 
@@ -183,6 +190,8 @@ after the first W3C markup validator test i removed the `controlslist` attribute
 | Message Received Page | Click on the "Home" link | Navigates back to the top of the main page | PASS |
 | 404 Page | Enter an non-existing url within the site | Displays the "404.html" page | PASS |
 | 404 Page | Click on the "Home" link | Navigates back to the top of the main page | PASS |
+
+!!!!ADD ROWS FOR TESTING THE OPACITY TRANSITIONS
 
 
 ### Known Bugs
@@ -242,8 +251,16 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Code
 
-- ???
-- ???
+- Responsive Navbar:
+    - LINK
+- Underline active section in menu:
+    - LINK
+- Pause playing audio when different audio is played: JavaScript
+    - LINK
+- Footer social links using Font Awesome:
+    - LINK
+
+
 
 ### Content
 
