@@ -2,35 +2,11 @@
 
 [View the live project here](https://timgoalen.github.io/tg-composer-portfolio)
 
-**TIM GOALEN *composer*** is a portfolio website for myself that showcases my work as a TV composer. The goal of this website is to provide a place where TV professionals (directors, producers, production managers etc.) can find my credits, listen to my work and contact me easily; and for audience members to listen to music from programmes they’ve seen and get in touch.
-
-[!!MERGE THESE 2 INTRO SECTIONS!!]
-
-User 1-
-
-Director/producer looking to find my composer credits/ showreel and get in touch to speak about a project
-
-User 2-
-
-TV audience member looking to listen to music heard on a programme and perhaps get in touch to say they liked it
+**TIM GOALEN *composer*** is a portfolio website for myself that showcases my work as a TV composer. The goal of this website is to provide a place where:
+1. TV professionals (directors, producers and production managers) can find my credits, listen to my work and contact me easily.
+2. Audience members can listen to music from programmes they’ve seen and get in touch.
 
 ![Image of the website on multiple devices](documentation/responsive-site-preview.png)
-
-## User Experience
-
--   ### User Goals
-
-    -   #### TV Professional User Goals
-
-        1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the organisation.
-        2. As a First Time Visitor, I want to be able to easily navigate throughout the site to find content.
-        3. As a First Time Visitor, I want to look for testimonials to understand what their users think of them and see if they are trusted. I also want to locate their social media links to see their followings on social media to determine how trusted and known they are.
-
-    -   #### Audience Member User Goals
-
-        1. As a Returning Visitor, I want to find information about coding challenges.
-        2. As a Returning Visitor, I want to find the best way to get in contact with the organisation with any questions I may have.
-        3. As a Returning Visitor, I want to find community links.
 
 ## Design
 The design is based on an original prototype that I previously built using Squarespace.
@@ -52,9 +28,12 @@ The site has a contemporary mimimalist aesthetic, based on a monochrome colour p
 ![Image of the colour palette](documentation/colour-palette.png)
 
 ### Typography
-~~The Montserrat font is the main font used throughout the whole website with Sans Serif as the fallback font in case for any reason the font isn't being imported into the site correctly. Montserrat is a clean font used frequently in programming, so it is both attractive and appropriate.~~
+The site uses a single font - 'Poppins' - with the browser-default sans serif as a fallback in case tyhe main font fails to load correctly. Poppins is a contemporary font that fit the mimimalist aesthetic by it by it's design being based on pure geometry.
 
-oversized section titles, with thin 100-weight font.
+The oversized section titles use the thin 100-weight version of the font, with a responsive font-size of:
+`calc(4rem + 0.5vw)`
+
+A similar responsive font-size is also used for logo, navbar links and 'About' section paragraph text.
 
 ### Imagery
 ~~Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.~~
@@ -130,6 +109,7 @@ explanation & image
 - favicon
 - wave
 - contrast checker
+- jshint
 - etc.
 
 ## Testing
