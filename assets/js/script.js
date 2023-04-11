@@ -17,8 +17,8 @@ allNavLinks.forEach(link => {
   link.addEventListener('click', () => {
     navBarLinks.classList.remove('open');
     responsiveMenuButton.classList.remove('open');
-  })
-})
+});
+});
 
 // Pause all audio script, from https://stackoverflow.com/questions/19790506/multiple-audio-html-auto-stop-other-when-current-is-playing-with-javascript
 
