@@ -1,12 +1,12 @@
 # Tim Goalen - Composer Website
 
+![Image of the website on multiple devices](documentation/responsive-site-preview.png)
+
 [View the live project here](https://timgoalen.github.io/tg-composer-portfolio)
 
 **TIM GOALEN *composer*** is a portfolio website for myself that showcases my work as a TV composer. The goal of this website is to provide a place where:
 1. TV professionals (directors, producers and production managers) can find my credits, listen to my work and contact me easily.
 2. Audience members can listen to music from programmes they’ve seen and get in touch.
-
-![Image of the website on multiple devices](documentation/responsive-site-preview.png)
 
 ## Design
 The design is based on an original prototype that I previously built using Squarespace.
@@ -33,14 +33,17 @@ The site uses a single font - 'Poppins' - with the browser-default sans serif as
 The oversized section titles use the thin 100-weight version of the font, with a responsive font-size of:
 `calc(4rem + 0.5vw)`
 
-A similar responsive font-size is also used for logo, navbar links and 'About' section paragraph text.
+Similar responsive font-sizes are also used for the logo, navbar links and 'About' section paragraph text.
+
+Google fonts was used to import the font at the top of the linked CSS file.
 
 ### Imagery
-~~Imagery is important. The large, background hero image is designed to be striking and catch the user's attention. It also has a modern, energetic aesthetic.~~
+
+Site imagery cpomsists of a profile headshot at the top of the page and the project promotional images in the 'Credits' section.
 
 ## Features
 
-Mobile-first approach, using responsive units (%, vh and vw) wherever possible, to keep media queries to a minimum.
+(!!RE-WORD!!)Mobile-first approach, using responsive units (%, vh and vw) wherever possible, to keep media queries to a minimum.
 
 ### Navigation Bar
 ![Image of the navigation bar](documentation/desktop-navbar.png)
@@ -88,29 +91,34 @@ explanation & image
 
 explanation & image
 
+## Future Feature Implementations
+
+- list???
+- list???
+- list???
+- list???
+
 ## Technologies Used
 
 - Languages Used:
     -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
     -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
     -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
-- [Git](https://git-scm.com/)
-    - Git was used for version control by utilizing the Gitpod terminal to commit to Git and Push to GitHub.
-- [GitHub](https://github.com/)
-    - GitHub is used to store the projects code after being pushed from Git.
-- [Google Fonts](https://fonts.google.com/)
-    - Google fonts were used to import the 'Titillium Web' font into the style.css file which is used on all pages throughout the project.
-- [Font Awesome](https://fontawesome.com/)
-    - Font Awesome was used on all pages throughout the website to add icons for aesthetic and UX purposes.
-- birme - https://www.birme.net/
-- https://autoprefixer.github.io/ 
-- tinyPNG
-- https://pagespeed.web.dev
-- favicon
-- wave
-- contrast checker
-- jshint
-- etc.
+- [Git](https://git-scm.com/) - for version control, using the Gitpod IDE.
+- [GitHub](https://github.com/) - for storing the project.
+- [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - to troubleshoot code.
+- [Google Fonts](https://fonts.google.com/) - used to import the 'Poppins' font.
+- [Font Awesome](https://fontawesome.com/) - for the social media icons in the footer and the award icons in the 'Credits' section.
+- [Favicon.io](https://favicon.io/) - to create the favicons.
+- [Birme](https://www.birme.net/) - to convert the images into WebP format.
+- [TinyPNG](https://tinypng.com/) - to compress the images.
+- [Autoprefixer](https://autoprefixer.github.io/) - to add vendor prefixes. 
+- [PageSpeed Insights](https://pagespeed.web.dev/) - for automated testing of performance, accessibilty, best practices and SEO.
+- [WebAIM WAVE](https://wave.webaim.org/) - for automated testing of accesibility.
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - to check colour contrast accesibility.
+- [W3C Markup Validator](https://validator.w3.org) - to test HTML code.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator) - to test CSS code.
+- [JSHint](https://jshint.com/) - to test JavaScript code.
 
 ## Testing
 
@@ -232,25 +240,32 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 ### Code
 
 - Responsive Navbar:
-    - LINK
+    - [codebubb](https://www.youtube.com/watch?v=c9jNIYQ1IuI)
 - Underline active section in menu:
-    - LINK
-- Pause playing audio when different audio is played: JavaScript
-    - LINK
+    - [W3Schools](https://www.w3schools.com/howto/howto_js_active_element.asp)
+- Pause playing audio when different audio is played:
+    - Javascript solution from [Stack Overflow](https://stackoverflow.com/questions/19790506/multiple-audio-html-auto-stop-other-when-current-is-playing-with-javascript)
 - Footer social links using Font Awesome:
-    - LINK
-
-
+    - Code Institute ['Love Running'](https://github.com/Code-Institute-Org/love-running-2.0) walkthrough project
 
 ### Content
 
-- ???
-- ???
+- All content written by the developer.
 
 ### Media
 
-- ???
-- ???
+- All audio content owned by the developer.
+- Image credits:
+    - Headshot owned by the developer.
+    - Running with the Devil: The Wild World of John McAfee - owned by NETFLIX/Curious Films, used for promotional purposes only.
+    - Running with the Devil: The Wild World of John McAfee - owned by NETFLIX/Curious Films, used for promotional purposes only.
+    - Being Frank: The Frank Gardner Story - owned by BBC TWO/Curious Films, used for promotional purposes only.
+    - The Parkinson's Drug Trial: A Miracle Cure? - owned by BBC TWO/Passionate Productions, used for promotional purposes only.
+    - Driven: The Billy Monger Story - owned by BBC TWO/Oxford Scientific Films, used for promotional purposes only.
+    - Animals with Cameras - owned by BBC ONE/BBC Natural History Unit, used for promotional purposes only.
+    - Terry Pratchett: Back in Black - owned by BBC TWO/BBC Studios, used for promotional purposes only.
+    - The Hungry Corpse - owned by Rankin Film Productions/Beakus, used for promotional purposes only.
+    - Terry Pratchett: Choosing to Die - owned by BBC TWO/Keo Films, used for promotional purposes only.
 
 ### Acknowledgements
 
