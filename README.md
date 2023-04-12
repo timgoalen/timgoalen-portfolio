@@ -133,13 +133,34 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 Syntax errors were tested for with [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator). No errors were found in the published version of the site.
 
 Improvements following initial testing:
-- After the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements, as is an experimental attribute and failed the test. I had included it for `nodownload` and `noplaybackrate` values, which disable the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
+- After the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements. Being an experimental attribute it failed the validator. I had included it for `nodownload` and `noplaybackrate` values, which disable the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
+- Correctly nesting the footer within the `<body>` element in the 'message-received.html' and '404.html' pages.
 
-[PROB SHOW THESE IN COLLAPSABLE MENU]
+### PageSpeed Insights
 
-### Lighthouse / Page-speed?
+#### Desktop:
+![PageSpeed Insights ???](documentation/pagespeedinsights-index-desktop.png)
 
-!!!SHOW IMAGES & RESULTS
+#### Mobile:
+![PageSpeed Insights ???](documentation/pagespeedinsights-index-mobile.png)
+
+A large improvement on the prototype Squarespace site:
+<details><summary>Desktop</summary>
+<img src="documentation/pagespeedinsights-squarespace-desktop.png">
+</details>
+<details><summary>Mobile</summary>
+<img src="documentation/pagespeedinsights-squarespace-mobile.png">
+</details>
+
+Improvements made following inital testing:
+- Resizing images to 150% of their max diaplyed size.
+- Serving images in WebP format, with a JPEG as a fallback for browsers that don't support WebP. Through the picture `<picture>` and `<source>` elements.
+- Adding explicit `width` and `height` to all images, to reduce layout shift as the browser loads the image.
+- INCREASING CONTRAST????
+
+### accesibility testing
+
+???wave???contrast etc.
 
 ### Devices & Browsers Used for Manual Testing
 - iPhone SE (2020)
