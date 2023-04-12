@@ -13,13 +13,20 @@ The design is based on an original prototype that I previously built using Squar
 
 [View the prototype Squarespace site here](https://www.timgoalen.com)
 
-Reasons for needing update (RE-WRITE)...INCL. cheaper to maintain; improve site accesibility/performance; future more maintainable/updatable.
+Aims for improvements on the Squarespace version include:
+- improving performance & accesibility
+- increasing the ease of implementing future custom features
+- reducing yearly subscription cost
 
-Changed from multi-page design in the prototype, to single-page design, with sections linked in the navigation to...(explanation)
-- higher lighhouse scores
-- better accesibility
-- improved colout schee and use ineractions (hover effects, transitions etc.)
-- decided against a stand-alone landing page, instead having the 'About' section at the top of the page. to imrpove UX by taking the user directly to content [[***re-edit all this]]
+The main design updates include:
+- simplifing the site from a multi-page to a single-page design
+- ommitting the separate landing page, improving UX by taking the user directly to content
+- improving the colour scheme and typography
+- improving feedback from user interactions
+    - hover effects on menu items and input fields
+    - transition effects on page load and when navigattion scrolls to a section
+
+The site was built with a **mobile-first** approach, using responsive units (`%`, `vh` and `vw`) where possible, to keep media queries to a minimum.
 
 ### Colour Scheme
 
@@ -42,8 +49,6 @@ Google Fonts was used to import the font at the top of the linked CSS file.
 Site imagery consists of a profile headshot at the top of the page and the project promotional images in the 'Credits' section.
 
 ## Features
-
-(!!RE-WORD!!)Mobile-first approach, using responsive units (%, vh and vw) wherever possible, to keep media queries to a minimum.
 
 ### Navigation Bar
 ![Image of the navigation bar](documentation/desktop-navbar.png)
@@ -93,10 +98,11 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 
 ## Future Feature Implementations
 
-- list???
-- list???
-- list???
-- list???
+- A custom audio player, bult with JavaScript
+    - with ability to not display controls such as 'download', 'playback speed', 'forward/backward skip'; and design improvements
+- Connect the form submit information to an email account
+- Improve the hamburger navigation menu, with opening & closing transitions
+- Sections that take up 100% of the veiwport height, with animation effects on scroll
 
 ## Technologies Used
 
@@ -104,6 +110,7 @@ Site imagery consists of a profile headshot at the top of the page and the proje
     -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
     -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
     -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+- [Visual Studio Code](https://code.visualstudio.com/) - as the code editor.
 - [Git](https://git-scm.com/) - for version control, using the Gitpod IDE.
 - [GitHub](https://github.com/) - for storing the project.
 - [Chrome Developer Tools](https://developer.chrome.com/docs/devtools/) - to troubleshoot code.
@@ -137,18 +144,20 @@ after the first W3C markup validator test i removed the `controlslist` attribute
 !!!SHOW IMAGES & RESULTS
 
 ### Devices & Browsers Used for Manual Testing
-- iPhone (??)
-    - Safari (??)
-    - Chrome(??)
+- iPhone SE (2020)
+    - Safari (v16.1)
+    - Chrome (v112)
 - iPad (??)
     - Safari
 - Macbook Pro (??)
     - Chrome (??)
     - Safari (??)
-- Mac Pro (??)
+- Mac Pro (Mid 2012)
+    - Chrome (v112)
+    - Safari (v12.1.2)
+    - Firefox (v112.0)
+- Chromebook (??)
     - Chrome (??)
-    - Safari (??)
-    - Firefox (??)
 
 ### Manual Testing of User Actions
 | Feature | Action | Expected Behaviour | Pass/fail |
@@ -158,9 +167,11 @@ after the first W3C markup validator test i removed the `controlslist` attribute
 | Navbar | Click on "Listen" | Scrolls to the "Listen" section | PASS |
 | Navbar | Click on "Credits" | Scrolls to the "Credits" section | PASS |
 | Navbar | Click on "Contact" | Scrolls to the "Contact" section | PASS |
+| Navbar | Click on any link | Opacity transition on target section | PASS |
 | Mobile menu | Click on hamburger icon | Shows navigation menu and icon changes to "X" | PASS |
 | Mobile menu | Click on "X" icon | Collapses navigation menu | PASS |
 | Mobile menu | Click on link | Navigates to the selected section and menu collapses | PASS |
+| About | Page Load | Opacity transition | PASS |
 | Listen | Click on a play button | Plays an audio element | PASS |
 | Listen | Click on a pause button | Pauses an audio element | PASS |
 | Listen | Click on a transport slider | Navigates to the selected position in the audio file (once buffered) | PASS |
@@ -179,12 +190,9 @@ after the first W3C markup validator test i removed the `controlslist` attribute
 | 404 Page | Enter an non-existing url within the site | Displays the "404.html" page | PASS |
 | 404 Page | Click on the "Home" link | Navigates back to the top of the main page | PASS |
 
-!!!!ADD ROWS FOR TESTING THE OPACITY TRANSITIONS
-
-
 ### Known Bugs
 
-- ???
+- ??? TODOOOOO!!!
 - ???
 
 ## Deployment
