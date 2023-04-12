@@ -30,16 +30,16 @@ The site has a contemporary mimimalist aesthetic, based on a monochrome colour p
 ### Typography
 The site uses a single font - 'Poppins' - with the browser-default sans serif as a fallback in case tyhe main font fails to load correctly. Poppins is a contemporary font that fit the mimimalist aesthetic by it by it's design being based on pure geometry.
 
-The oversized section titles use the thin 100-weight version of the font, with a responsive font-size of:
-`calc(4rem + 0.5vw)`
+The oversized section titles use the thin 100-weight version of the font, with a responsive font-size of
+`calc(4rem + 0.5vw)`.
 
 Similar responsive font-sizes are also used for the logo, navbar links and 'About' section paragraph text.
 
-Google fonts was used to import the font at the top of the linked CSS file.
+Google Fonts was used to import the font at the top of the linked CSS file.
 
 ### Imagery
 
-Site imagery cpomsists of a profile headshot at the top of the page and the project promotional images in the 'Credits' section.
+Site imagery consists of a profile headshot at the top of the page and the project promotional images in the 'Credits' section.
 
 ## Features
 
@@ -49,7 +49,7 @@ Site imagery cpomsists of a profile headshot at the top of the page and the proj
 ![Image of the navigation bar](documentation/desktop-navbar.png)
 
 - A fixed navigation bar is available on every page. 
-- Clicking a link takes the user to the desired page section with a smooth scroll effect, and triggers an opacity transition in the selected section, via a `:target` pseudo-class selector.
+- Clicking a link takes the user to the desired page section with a smooth-scroll effect, and triggers an opacity transition in the selected section, via a `:target` pseudo-class selector.
 - The text turns blue as the cursor hovers over it, and remains blue after being clicked to indicate the users current position within the page.
 
 ### Mobile Navigation Menu
@@ -68,8 +68,7 @@ Site imagery cpomsists of a profile headshot at the top of the page and the proj
 ![Image of the listen section](documentation/listen-section.png)
 
 - A seven-track audio showreel, made with HTML `<audio>` elements.
-- Importantly for UX, JavaScript is used to pause the currently playing audio element if another is played.
-
+- JavaScript is used to pause the currently playing audio element if another is played, which is crucial for good UX.
 
 ### Credits
 ![Image of the credits section](documentation/credits-section.png)
@@ -79,17 +78,18 @@ Site imagery cpomsists of a profile headshot at the top of the page and the proj
 ### Contact & Footer
 ![Image of the contact section with footer](documentation/contact-section.png)
 
-explanation & image
+- Includes a contact form, with input validation on all fields.
+- The footer includes links to my Spotify, Twitter and IMDb pages.
 
 ### Message Received Page
 ![Image of the message received page](documentation/message-received-page.png)
 
-explanation & image
+- The user is taken to this Message Received page after succesfully submitting the contact form. They offered a new 'Home' button to return home, as well as access to the nav bar and footer.
 
 ### 404 Error Page
 ![Image of the 404 error page](documentation/error-404-page.png)
 
-explanation & image
+- A custom page if the user tries to navigate to a page URL tha doesn't exist or can't be found within the site.
 
 ## Future Feature Implementations
 
