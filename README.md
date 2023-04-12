@@ -21,6 +21,7 @@ Aims for improvements on the Squarespace version include:
 The main design updates include:
 - simplifing the site from a multi-page to a single-page design
 - ommitting the separate landing page, improving UX by taking the user directly to content
+- featuring just selected credits (highlights) in the Credits and Listen sections
 - improving the colour scheme and typography
 - improving feedback from user interactions
     - hover effects on menu items and input fields
@@ -129,13 +130,10 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 
 ## Testing
 
-Syntax errors were tested for with W3C Markup Validator and W3C CSS Validator. No errors were found.
+Syntax errors were tested for with [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator). No errors were found in the published version of the site.
 
--   [W3C Markup Validator](https://validator.w3.org) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftimgoalen.github.io%2Ftg-composer-portfolio%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-***RUN THIS AGAIN - 'controlslist' errors shown on audio elements
--   [W3C CSS Validator](https://jigsaw.w3.org/css-validator) - [Results](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Ftimgoalen.github.io%2Ftg-composer-portfolio%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en)
-
-after the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements, as is an experimental attribute and would fail the test. had it for `nodownload` and `noplaybackrate`, for diabling the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
+Improvements following initial testing:
+- After the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements, as is an experimental attribute and failed the test. I had included it for `nodownload` and `noplaybackrate` values, which disable the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
 
 [PROB SHOW THESE IN COLLAPSABLE MENU]
 
@@ -147,17 +145,15 @@ after the first W3C markup validator test i removed the `controlslist` attribute
 - iPhone SE (2020)
     - Safari (v16.1)
     - Chrome (v112)
-- iPad (??)
-    - Safari
-- Macbook Pro (??)
-    - Chrome (??)
-    - Safari (??)
+- iPad (6th Generation)
+    - Chrome (v111)
+    - Safari (v15)
 - Mac Pro (Mid 2012)
     - Chrome (v112)
     - Safari (v12.1.2)
     - Firefox (v112.0)
-- Chromebook (??)
-    - Chrome (??)
+- Dell Chromebook 3120
+    - Chrome (v103)
 
 ### Manual Testing of User Actions
 | Feature | Action | Expected Behaviour | Pass/fail |
