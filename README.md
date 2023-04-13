@@ -100,9 +100,10 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 ## Future Implementations
 
 - A custom audio player, built with JavaScript, with the ability to not display controls such as 'download', 'playback speed', 'forward/backward skip'; and design improvements.
-- Connect the form submit information to an email account.
+- Connect the form submit information to an email account, using EmailJS or similar.
 - Improve the hamburger navigation menu, with opening & closing transitions.
 - Sections that take up 100% of the viewport height, with animation effects on scroll.
+- Link the deployed site with the timgoalen.com domain.
 
 ## Technologies Used
 
@@ -157,8 +158,8 @@ Which is a large improvement on the prototype Squarespace site:
 
 Changes made following initial testing:
 - Resizing images to 150% of their max displayed size.
-- Serving images in WebP format, with a JPEG as a fallback for browsers that don't support WebP. Through the picture `<picture>` and `<source>` elements.
-- Adding explicit `width` and `height` to all images, to reduce layout shift as the browser loads the image.
+- Serving images in WebP format, with a JPEG as a fallback for browsers that don't support WebP, by nesting `<source>` elements within the `<picture>` element.
+- Adding explicit `width` and `height` values to all images, to reduce layout shift as the browser loads the image.
 - `loading="lazy"` was tested on the Credits images to increase performance, but was removed after no performance increase was measured.
 
 - Insufficient contrast was found in some of the originally chosen red and blue text colours.
@@ -166,7 +167,7 @@ Changes made following initial testing:
 Original colours:
 ![Image of the original colour palette](documentation/eightshapesgrid-original-colours.png)
 
-After using [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) the red and blue colours were updated to slightly darker shaded, to improve contrast and eligibility:
+After using [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) the red and blue colours were updated to slightly darker shade, to improve contrast and eligibility:
 
 ![Image of the WebAIM Contrast Checker for the blue colour](documentation/webaim-contrast-checker.png)
 
@@ -175,21 +176,28 @@ Updated colours:
 ![Image of the updated colour palette](documentation/eightshapesgrid-updated-colours.png)
 
 ### WebAIM WAVE
-===INCLUDE SCREENSHOTS OF WAVE TESTING===
+Site accessibility was checked with [WebAIM WAVE](https://wave.webaim.org/). There are no errors on the published site.
+
+![Image of WebAIM WAVE results](documentation/index-webaim-wave-results.png)
+![Image of WebAIM WAVE alerts](documentation/index-webaim-wave-alerts.png)
+
+After the initial test, an `<h1>` tag was used to nest the site logo, after the results showed the alert "missing first level heading".
+
+All other HTML pages were tested, with no errors present.
 
 ### Devices & Browsers Used for Manual Testing
 - iPhone SE (2020)
-- Safari (v16.1)
-- Chrome (v112)
+    - Safari (v16.1)
+    - Chrome (v112)
 - iPad (6th Generation)
-- Chrome (v111)
-- Safari (v15)
+    - Chrome (v111)
+    - Safari (v15)
 - Mac Pro (Mid 2012)
-- Chrome (v112)
-- Safari (v12.1.2)
-- Firefox (v112.0)
+    - Chrome (v112)
+    - Safari (v12.1.2)
+    - Firefox (v112.0)
 - Dell Chromebook 3120
-- Chrome (v103)
+    - Chrome (v103)
 
 ### Manual Testing of User Actions
 | Feature | Action | Expected Behaviour | Pass/fail |
@@ -222,10 +230,16 @@ Updated colours:
 | 404 Page | Enter an non-existing url within the site | Displays the "404.html" page | PASS |
 | 404 Page | Click on the "Home" link | Navigates back to the top of the main page | PASS |
 
+### Fixed Bugs
+| Bug | Fix |
+|---|---|
+| 'Send' text on the contact form submit button not visible on the deployed site with an iPhone or iPad (but fine on the simulators in Chrome Dev Tools) | Added an explicit `color: #000` to the `input[type=submit]` style rule|
+| Overspill from the image in the grid at the bottom of the 'Credits' page, bleeding into the contact form below | Added `padding-top` to the `<h2>` below, as a workaround |
+
 ### Known Bugs
 
-- ??? TODOOOOO!!!
-- ???
+- The navbar menu items are bunched together when viewed on older Safari browsers. Support for the flexbox `gap` property isn't available on versions older than 14.1 (2021).
+- The hamburger menu icon is blue, rather than black, when the deployed site is viewed on an iPhone.
 
 ## Deployment
 
