@@ -98,7 +98,7 @@ footer a:hover,
     color: #1076B1;
 }
 
-#responsiveMenuToggleButton {
+#responsive-menu-toggle-button {
     background-color: transparent;
     border: 0;
     cursor: pointer;
@@ -107,7 +107,7 @@ footer a:hover,
     right: 4%;
 }
 
-#responsiveMenuToggleButton svg {
+#responsive-menu-toggle-button svg {
     height: 1.5rem;
     width: 1.5rem;
     position: absolute;
@@ -115,19 +115,19 @@ footer a:hover,
     right: 0;
 }
 
-#responsiveMenuToggleButton .openIcon {
+#responsive-menu-toggle-button .openIcon {
     display: block;
 }
 
-#responsiveMenuToggleButton .closeIcon {
+#responsive-menu-toggle-button .closeIcon {
     display: none;
 }
 
-#responsiveMenuToggleButton.open .openIcon {
+#responsive-menu-toggle-button.open .openIcon {
     display: none;
 }
 
-#responsiveMenuToggleButton.open .closeIcon {
+#responsive-menu-toggle-button.open .closeIcon {
     display: block;
 }
 
@@ -449,7 +449,7 @@ textarea:hover {
 
 /* Navbar media query */
 @media screen and (max-width: 670px) {
-    #responsiveMenuToggleButton {
+    #responsive-menu-toggle-button {
         display: block;
     }
 

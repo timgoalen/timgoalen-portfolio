@@ -1,6 +1,6 @@
 // Hamburger menu toggle, from https://www.youtube.com/watch?v=c9jNIYQ1IuI
 
-const responsiveMenuButton = document.getElementById('responsiveMenuToggleButton');
+const responsiveMenuButton = document.getElementById('responsive-menu-toggle-button');
 
 const navBarLinks = document.querySelector('.navbar-links');
 
