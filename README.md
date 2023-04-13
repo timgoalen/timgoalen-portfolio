@@ -5,8 +5,8 @@
 [View the live project here](https://timgoalen.github.io/tg-composer-portfolio)
 
 **TIM GOALEN *composer*** is a portfolio website for myself that showcases my work as a TV composer. The goal of this website is to provide a place where:
-1. TV professionals (directors, producers and production managers) can find my credits, listen to my work and contact me easily.
-2. Audience members can listen to music from programmes they’ve seen and get in touch.
+1. TV professionals (directors, producers and production managers) can find my credits, listen to my work and easily contact me.
+2. Audience members can listen to music from programmes that they’ve seen and get in touch.
 
 ## Design
 The design is based on an original prototype that I previously built using Squarespace.
@@ -14,29 +14,29 @@ The design is based on an original prototype that I previously built using Squar
 [View the prototype Squarespace site here](https://www.timgoalen.com)
 
 Aims for improvements on the Squarespace version include:
-- improving performance & accesibility
+- improving performance & accessibility
 - increasing the ease of implementing future custom features
 - reducing yearly subscription cost
 
 The main design updates include:
-- simplifing the site from a multi-page to a single-page design
-- ommitting the separate landing page, improving UX by taking the user directly to content
-- featuring just selected credits (highlights) in the Credits and Listen sections
+- simplifying the site from a multi-page to a single-page design
+- omitting the separate landing page, improving UX by taking the user directly to content
+- featuring selected credits - rather than comprehensive credits - in the Credits and Listen sections
 - improving the colour scheme and typography
-- improving feedback from user interactions
+- improving feedback from user interactions, such as:
     - hover effects on menu items and input fields
-    - transition effects on page load and when navigattion scrolls to a section
+    - transition effects on page load and when navigation scrolls to a section
 
 The site was built with a **mobile-first** approach, using responsive units (`%`, `vh` and `vw`) where possible, to keep media queries to a minimum.
 
 ### Colour Scheme
 
-The site has a contemporary mimimalist aesthetic, based on a monochrome colour palette of white and black, with red and blue accent colours being used sparingly.
+The site has a contemporary minimalist aesthetic, based on a monochrome colour palette of white and black, with red and blue accent colours being used sparingly.
 
 ![Image of the colour palette](documentation/colour-palette.png)
 
 ### Typography
-The site uses a single font - 'Poppins' - with the browser-default sans serif as a fallback in case tyhe main font fails to load correctly. Poppins is a contemporary font that fit the mimimalist aesthetic by it by it's design being based on pure geometry.
+The site uses a single font - 'Poppins' - with the browser-default sans serif as a fallback in case the main font fails to load correctly. Poppins is a contemporary font that fit the minimalist aesthetic by it by it's design being based on pure geometry.
 
 The oversized section titles use the thin 100-weight version of the font, with a responsive font-size of
 `calc(4rem + 0.5vw)`.
@@ -67,7 +67,7 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 ### About
 ![Image of the about section](documentation/about-section.png)
 
-- Diplayed as one column on mobile screens and two columns on tablet screens and larger.
+- Displayed as one column on mobile screens and two columns on tablet screens and larger.
 - Features a headshot and two paragraphs detailing work highlights.
 
 ### Listen
@@ -90,27 +90,26 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 ### Message Received Page
 ![Image of the message received page](documentation/message-received-page.png)
 
-- The user is taken to this Message Received page after succesfully submitting the contact form. They offered a new 'Home' button to return home, as well as access to the nav bar and footer.
+- The user is taken to this Message Received page after successfully submitting the contact form. They offered a new 'Home' button to return home, as well as access to the nav bar and footer.
 
 ### 404 Error Page
 ![Image of the 404 error page](documentation/error-404-page.png)
 
-- A custom page if the user tries to navigate to a page URL tha doesn't exist or can't be found within the site.
+- A custom page if the user tries to navigate to a page URL that doesn't exist or can't be found within the site.
 
-## Future Feature Implementations
+## Future Implementations
 
-- A custom audio player, bult with JavaScript
-    - with ability to not display controls such as 'download', 'playback speed', 'forward/backward skip'; and design improvements
-- Connect the form submit information to an email account
-- Improve the hamburger navigation menu, with opening & closing transitions
-- Sections that take up 100% of the veiwport height, with animation effects on scroll
+- A custom audio player, built with JavaScript, with the ability to not display controls such as 'download', 'playback speed', 'forward/backward skip'; and design improvements.
+- Connect the form submit information to an email account.
+- Improve the hamburger navigation menu, with opening & closing transitions.
+- Sections that take up 100% of the viewport height, with animation effects on scroll.
 
 ## Technologies Used
 
 - Languages Used:
-    -   [HTML5](https://en.wikipedia.org/wiki/HTML5)
-    -   [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
-    -   [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
+    - [HTML](https://en.wikipedia.org/wiki/HTML5)
+    - [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets)
+    - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 - [Visual Studio Code](https://code.visualstudio.com/) - as the code editor.
 - [Git](https://git-scm.com/) - for version control, using the Gitpod IDE.
 - [GitHub](https://github.com/) - for storing the project.
@@ -120,23 +119,27 @@ Site imagery consists of a profile headshot at the top of the page and the proje
 - [Favicon.io](https://favicon.io/) - to create the favicons.
 - [Birme](https://www.birme.net/) - to convert the images into WebP format.
 - [TinyPNG](https://tinypng.com/) - to compress the images.
+- [Am I Responsive](https://ui.dev/amiresponsive) - to create the responsive demo image at the top of the readme.
 - [Autoprefixer](https://autoprefixer.github.io/) - to add vendor prefixes. 
-- [PageSpeed Insights](https://pagespeed.web.dev/) - for automated testing of performance, accessibilty, best practices and SEO.
-- [WebAIM WAVE](https://wave.webaim.org/) - for automated testing of accesibility.
-- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - to check colour contrast accesibility.
-- [W3C Markup Validator](https://validator.w3.org) - to test HTML code.
-- [W3C CSS Validator](https://jigsaw.w3.org/css-validator) - to test CSS code.
-- [JSHint](https://jshint.com/) - to test JavaScript code.
+- [PageSpeed Insights](https://pagespeed.web.dev/) - for automated testing of performance, accessibility, best practices and SEO.
+- [WebAIM WAVE](https://wave.webaim.org/) - for automated testing of accessibility.
+- [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) - to check colour contrast accessibility.
+- [Eightshapes Contrast Grid](https://contrast-grid.eightshapes.com/) - to visualise the contrast accessibility of the whole site colour palette. 
+- [W3C Markup Validator](https://validator.w3.org) - to test the HTML code.
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator) - to test the CSS code.
+- [JSHint](https://jshint.com/) - to test the JavaScript code.
 
 ## Testing
 
 Syntax errors were tested for with [W3C Markup Validator](https://validator.w3.org) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator). No errors were found in the published version of the site.
 
 Improvements following initial testing:
-- After the first W3C markup validator test i removed the `controlslist` attribute on the `<audio>` elements. Being an experimental attribute it failed the validator. I had included it for `nodownload` and `noplaybackrate` values, which disable the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
+- After the first W3C markup validator test, the `controlslist` attribute on the `<audio>` elements were removed. Being an experimental attribute it failed the validator. It had been included for the `nodownload` and `noplaybackrate` values, which disable the controls for downloading the audio file and changing the playback speed. In future I will build a custom audio player for the site using JavaScript, to include this functionality.
 - Correctly nesting the footer within the `<body>` element in the 'message-received.html' and '404.html' pages.
 
 ### PageSpeed Insights
+
+The [PageSpeed Insights](https://pagespeed.web.dev/) results for the published site are - 
 
 #### Desktop:
 ![PageSpeed Insights ???](documentation/pagespeedinsights-index-desktop.png)
@@ -144,7 +147,7 @@ Improvements following initial testing:
 #### Mobile:
 ![PageSpeed Insights ???](documentation/pagespeedinsights-index-mobile.png)
 
-A large improvement on the prototype Squarespace site:
+Which is a large improvement on the prototype Squarespace site:
 <details><summary>Desktop</summary>
 <img src="documentation/pagespeedinsights-squarespace-desktop.png">
 </details>
@@ -152,29 +155,41 @@ A large improvement on the prototype Squarespace site:
 <img src="documentation/pagespeedinsights-squarespace-mobile.png">
 </details>
 
-Improvements made following inital testing:
-- Resizing images to 150% of their max diaplyed size.
+Changes made following initial testing:
+- Resizing images to 150% of their max displayed size.
 - Serving images in WebP format, with a JPEG as a fallback for browsers that don't support WebP. Through the picture `<picture>` and `<source>` elements.
 - Adding explicit `width` and `height` to all images, to reduce layout shift as the browser loads the image.
-- INCREASING CONTRAST????
+- `loading="lazy"` was tested on the Credits images to increase performance, but was removed after no performance increase was measured.
 
-### accesibility testing
+- Insufficient contrast was found in some of the originally chosen red and blue text colours.
 
-???wave???contrast etc.
+Original colours:
+![Image of the original colour palette](documentation/eightshapesgrid-original-colours.png)
+
+After using [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) the red and blue colours were updated to slightly darker shaded, to improve contrast and eligibility:
+
+![Image of the WebAIM Contrast Checker for the blue colour](documentation/webaim-contrast-checker.png)
+
+Updated colours:
+
+![Image of the updated colour palette](documentation/eightshapesgrid-updated-colours.png)
+
+### WebAIM WAVE
+===INCLUDE SCREENSHOTS OF WAVE TESTING===
 
 ### Devices & Browsers Used for Manual Testing
 - iPhone SE (2020)
-    - Safari (v16.1)
-    - Chrome (v112)
+- Safari (v16.1)
+- Chrome (v112)
 - iPad (6th Generation)
-    - Chrome (v111)
-    - Safari (v15)
+- Chrome (v111)
+- Safari (v15)
 - Mac Pro (Mid 2012)
-    - Chrome (v112)
-    - Safari (v12.1.2)
-    - Firefox (v112.0)
+- Chrome (v112)
+- Safari (v12.1.2)
+- Firefox (v112.0)
 - Dell Chromebook 3120
-    - Chrome (v103)
+- Chrome (v103)
 
 ### Manual Testing of User Actions
 | Feature | Action | Expected Behaviour | Pass/fail |
@@ -280,7 +295,7 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 - All audio content owned by the developer.
 - Image credits:
-    - Headshot owned by the developer.
+    - Headshot - owned by the developer.
     - Running with the Devil: The Wild World of John McAfee - owned by NETFLIX/Curious Films, used for promotional purposes only.
     - Running with the Devil: The Wild World of John McAfee - owned by NETFLIX/Curious Films, used for promotional purposes only.
     - Being Frank: The Frank Gardner Story - owned by BBC TWO/Curious Films, used for promotional purposes only.
@@ -293,8 +308,8 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ### Acknowledgements
 
--   My mentor Brian Macharia for his invaluable guidance.
+- My mentor Brian Macharia for his invaluable guidance.
 
--   Tutor support at Code Institute for their help with troubleshooting.
+- Tutor support at Code Institute for their help with troubleshooting.
 
-**DO A SPELLCHECK!!!!
+**DO A SPELLCHECK IF ANY CHANGES!!!!
