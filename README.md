@@ -247,25 +247,26 @@ All other HTML pages were tested, with no errors present.
 
 The project was deployed to GitHub Pages using the following steps...
 
+Note: Any code committed to the "main" branch will automatically update the live site.
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/timgoalen/tg-composer-portfolio)
 2. At the top of the Repository (not top of page), locate the "Settings" Button on the menu.
-3. Scroll down the Settings page until you locate the "GitHub Pages" Section.
-4. Under "Source", click the dropdown called "None" and select "Master Branch".
-5. The page will automatically refresh.
-6. Scroll back down through the page to locate the now published site in the "GitHub Pages" section.
+3. In the left sidebar, click on "Pages" in the "Code and automation" section.
+4. Under "Source", click on the dropdown menu and choose "Deploy from a branch".
+5. Under "Branch", from the "Select a branch" dropdown menu choose "main"; and from the "Select a folder" dropdown menu choose "/ (root)"; then click the "Save" button in the "Branch" section.
+6. Locate the now published site at the top of the "GitHub Pages" page.
 
 ### Forking the GitHub Repository
 
 By forking the GitHub Repository we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/timgoalen/tg-composer-portfolio)
-2. At the top of the Repository (not top of page) just above the "Settings" Button on the menu, locate the "Fork" Button.
+2. At the top right of the Repository, just below the GitHub navbar, click on the "Fork" Button.
 3. You should now have a copy of the original repository in your GitHub account.
 
 ### Making a Local Clone
 
 1. Log in to GitHub and locate the [GitHub Repository](https://github.com/timgoalen/tg-composer-portfolio)
-2. Under the repository name, click "Clone or download".
+2. Above the list of files, click "Code".
 3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.
 4. Open Git Bash
 5. Change the current working directory to the location where you want the cloned directory to be made.
@@ -287,6 +288,12 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 ```
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
+
+8. For changes you've made to reflect on the live site:
+
+    -   Type `git add <files changed> `
+    -   Type `git commit -m <description of change> `
+    -   Type `git push`
 
 ## Credits
 
@@ -325,5 +332,3 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 - My mentor Brian Macharia for his invaluable guidance.
 
 - Tutor support at Code Institute for their help with troubleshooting.
-
-**DO A SPELLCHECK IF ANY CHANGES!!!!
