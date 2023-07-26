@@ -19,7 +19,9 @@
         <!-- Title and navigation -->
         <nav class="navbar">
             <div>
-                <a href="index.html"><h1 id="logo">TIM GOALEN <em>composer</em></h1></a>
+                <a href="index.html">
+                    <h1 id="logo">TIM GOALEN <em>composer</em></h1>
+                </a>
             </div>
             <button aria-label="toggle menu" id="responsiveMenuToggleButton">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -314,17 +316,41 @@
         <!-- Contact form -->
         <section id="contact">
             <h2 class="contact-title">Contact</h2>
-            <form action="message-received.html" method="get">
+            <form id="contact-form">
+                <input type="hidden" name="contact_number">
                 <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="user_name" required>
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="user_email" required>
                 <label for="message">Message</label>
                 <textarea name="message" id="message" cols="30" rows="5" required></textarea>
                 <input type="submit" value="Send">
             </form>
         </section>
+
+        <!-- MailJS Contact Form -->
+        <!-- <form id="contact-form">
+            <input type="hidden" name="contact_number">
+            <label>Name</label>
+            <input type="text" name="user_name">
+            <label>Email</label>
+            <input type="email" name="user_email">
+            <label>Message</label>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Send">
+        </form> -->
     </main>
+
+    <!-- BACKUP -->
+    <!-- <form action="message-received.html" method="get">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+        <input type="submit" value="Send">
+    </form> -->
 
     <!-- footer solution and font awesome script credit: Code Intitute Love Running https://github.com/Code-Institute-Org/love-running-2.0 -->
     <footer>
@@ -349,6 +375,30 @@
     <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
     <!-- link to external javaScript file -->
     <script src="assets/js/script.js"></script>
+    <!-- mailjs script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("G7BPi3BMVxT9tP53B");
+        })();
+        window.onload = function () {
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // generate a three digit number for the contact_number variable
+                // this.contact_number.value = Math.random() * 1000 | 0;
+                // these IDs from the previous steps
+                emailjs.sendForm('default_service', 'contact_form', this)
+                    .then(function () {
+                        alert('Thanks for your message!');
+                    }, function (error) {
+                        alert('FAILED...', error);
+                    });
+            });
+        }
+
+    </script>
+
 </body>
 
 </html>
