@@ -14,7 +14,7 @@ html {
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
@@ -67,13 +67,13 @@ header {
     top: 0;
     width: 100%;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     background-color: #FFF;
     padding: 2% 4%;
     -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
     z-index: 2;
 }
 
@@ -154,25 +154,25 @@ footer a:hover,
 
 .about-image {
     -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    animation-duration: 3s;
     -webkit-animation-name: opacity-fade-in;
-            animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
 }
 
 .about-text {
     font-size: 1.1rem;
     line-height: 1.5;
     -webkit-animation-duration: 2s;
-            animation-duration: 2s;
+    animation-duration: 2s;
     -webkit-animation-name: opacity-fade-in;
-            animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
 }
 
 :target {
     -webkit-animation-duration: 1s;
-            animation-duration: 1s;
+    animation-duration: 1s;
     -webkit-animation-name: opacity-fade-in;
-            animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
 }
 
 @-webkit-keyframes opacity-fade-in {
@@ -255,7 +255,8 @@ input[type=submit] {
     margin-top: 1rem;
     background-color: #FFF;
     border: 1px solid #000;
-    color: #000; /* to fix bug where submit button text wasn;t showing on iPhone unrtiul hovered */
+    color: #000;
+    /* to fix bug where submit button text wasn';'t showing on iPhone until hovered */
 }
 
 input[type=submit]:hover {
@@ -266,7 +267,47 @@ input[type=submit]:hover {
 input:hover,
 textarea:hover {
     -webkit-box-shadow: 0px 0px 22px 0 #1076B1;
-            box-shadow: 0px 0px 22px 0 #1076B1;
+    box-shadow: 0px 0px 22px 0 #1076B1;
+}
+
+/* sending email spinner */
+#sending-email-spinner {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    left: 50%;
+    margin: -50% 0 0 -6%;
+    border-top: 3px solid #EC0404;
+    border-left: 1px dotted #000;
+    border-right: 3px solid #FFF;
+    border-bottom: 3px solid #1076B1;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.hidden {
+    display: none;
 }
 
 /* || Message-received.html and 404.html pages */
@@ -329,7 +370,7 @@ textarea:hover {
         grid-template-columns: 38% 58%;
         -ms-grid-rows: auto 0 auto 0 auto;
         grid-template-rows: repeat(3, auto);
-            grid-template-areas:
+        grid-template-areas:
             "top top"
             "left rightmid"
             ". rightbot";
@@ -338,8 +379,8 @@ textarea:hover {
 
     .about-image {
         -ms-flex-item-align: start;
-            -ms-grid-row-align: start;
-            align-self: start;
+        -ms-grid-row-align: start;
+        align-self: start;
         padding-top: 10%;
     }
 
@@ -365,7 +406,7 @@ textarea:hover {
     }
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 600px) {
 
     .about-image {
         -ms-grid-row: 3;
@@ -391,7 +432,7 @@ textarea:hover {
 
 @media screen and (min-width: 724px) {
     .about-grid-container {
-            grid-template-areas:
+        grid-template-areas:
             "top top"
             "left rightmid"
             "left rightbot";
@@ -401,20 +442,24 @@ textarea:hover {
     .about-image {
         padding-top: 8%;
     }
+
     .about-image {
         -ms-grid-row: 3;
         -ms-grid-row-span: 3;
         -ms-grid-column: 1;
     }
+
     .about-title {
         -ms-grid-row: 1;
         -ms-grid-column: 1;
         -ms-grid-column-span: 3;
     }
+
     .about-para-1 {
         -ms-grid-row: 3;
         -ms-grid-column: 3;
     }
+
     .about-para-2 {
         -ms-grid-row: 5;
         -ms-grid-column: 3;
@@ -458,8 +503,8 @@ textarea:hover {
     .navbar {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
     }
 
     .navbar-links {
@@ -475,13 +520,13 @@ textarea:hover {
         width: 100%;
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
         font-size: calc(1rem + 0.5vw);
         padding: 1rem;
         -webkit-box-align: end;
-            -ms-flex-align: end;
-                align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
         -webkit-transition: all 2s;
         -o-transition: all 2s;
         transition: all 2s;
