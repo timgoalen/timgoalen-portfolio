@@ -317,7 +317,6 @@
         <section id="contact">
             <h2 class="contact-title">Contact</h2>
             <form id="contact-form">
-                <input type="hidden" name="contact_number">
                 <label for="name">Name</label>
                 <input type="text" id="name" name="user_name" required>
                 <label for="email">Email</label>
@@ -328,17 +327,6 @@
             </form>
         </section>
 
-        <!-- MailJS Contact Form -->
-        <!-- <form id="contact-form">
-            <input type="hidden" name="contact_number">
-            <label>Name</label>
-            <input type="text" name="user_name">
-            <label>Email</label>
-            <input type="email" name="user_email">
-            <label>Message</label>
-            <textarea name="message"></textarea>
-            <input type="submit" value="Send">
-        </form> -->
     </main>
 
     <!-- BACKUP -->
@@ -375,7 +363,7 @@
     <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
     <!-- link to external javaScript file -->
     <script src="assets/js/script.js"></script>
-    <!-- mailjs script -->
+    <!-- emailjs script -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
     <script type="text/javascript">
@@ -385,18 +373,15 @@
         window.onload = function () {
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
-                // generate a three digit number for the contact_number variable
-                // this.contact_number.value = Math.random() * 1000 | 0;
-                // these IDs from the previous steps
+                // IDs from EmailJS account
                 emailjs.sendForm('default_service', 'contact_form', this)
                     .then(function () {
-                        alert('Thanks for your message!');
+                        window.location.href = "message-received.html";
                     }, function (error) {
                         alert('FAILED...', error);
                     });
             });
         }
-
     </script>
 
 </body>
