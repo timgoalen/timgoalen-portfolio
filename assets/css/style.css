@@ -270,20 +270,31 @@ textarea:hover {
     box-shadow: 0px 0px 22px 0 #1076B1;
 }
 
+/* spinner overlay */
+#spinner-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(16, 118, 177, 0.20);
+    z-index: 9999;
+    /* display: flex; is turned on with JavaScript */
+    justify-content: center;
+    align-items: center;
+}
+
 /* sending email spinner */
 #sending-email-spinner {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    left: 50%;
-    margin: -50% 0 0 -6%;
+    height: 75px;
+    width: 75px;
     border-top: 3px solid #EC0404;
     border-left: 1px dotted #000;
     border-right: 3px solid #FFF;
     border-bottom: 3px solid #1076B1;
     border-radius: 50%;
-    -webkit-animation: spin 2s linear infinite;
-    animation: spin 2s linear infinite;
+    animation: spin 0.75s ease-in-out infinite;
+    -webkit-animation: spin 0.75s ease-in-out infinite;
 }
 
 @-webkit-keyframes spin {
@@ -308,6 +319,10 @@ textarea:hover {
 
 .hidden {
     display: none;
+}
+
+.show-flex {
+    display: flex;
 }
 
 /* || Message-received.html and 404.html pages */
@@ -485,6 +500,11 @@ textarea:hover {
 @media screen and (min-width: 1200px) {
     main {
         padding: 0 15%;
+    }
+
+    #sending-email-spinner {
+        height: 150px;
+        width: 150px;
     }
 }
 

@@ -325,7 +325,9 @@
                 <textarea name="message" id="message" cols="30" rows="5" required></textarea>
                 <input type="submit" value="Send">
             </form>
-            <div id="sending-email-spinner" class="hidden"></div>
+            <div id="spinner-overlay" class="hidden">
+                <div id="sending-email-spinner"></div>
+            </div>
         </section>
     </main>
 
@@ -360,20 +362,24 @@
             emailjs.init("G7BPi3BMVxT9tP53B");
         })();
         window.onload = function () {
-            spinner = document.getElementById('sending-email-spinner');
+            spinner = document.getElementById("spinner-overlay");
             document.getElementById('contact-form').addEventListener('submit', function (event) {
                 event.preventDefault();
                 // Show the spinner when the form is submitted
                 spinner.classList.remove('hidden');
+                spinner.classList.add('show-flex');
                 // IDs from EmailJS account
                 emailjs.sendForm('default_service', 'contact_form', this)
                     .then(function () {
                         // Hide the spinner after the email is sent
                         spinner.classList.add('hidden');
+                        spinner.classList.remove('show-flex');
+                        // Redirect to message received page
                         window.location.href = "message-received.html";
                     }, function (error) {
                         // Hide the spinner in case of an error
                         spinner.classList.add('hidden');
+                        spinner.classList.remove('show-flex');
                         alert('FAILED...', error);
                     });
             });
