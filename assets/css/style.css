@@ -146,6 +146,31 @@ footer a:hover,
     padding-top: calc(var(--header-height) + 2.5%);
 }
 
+/* || Landing page - index.html */
+
+.landing-page {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    /* margin-top: 20%; */
+    gap: 5%;
+
+}
+
+.software-engineer,
+.tv-composer {
+    height: 40%;
+    align-self: center;
+    background-color: #a5d2ec;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1rem + 0.5vw);;
+}
+
+
 /* || About section */
 
 .about-grid-container {

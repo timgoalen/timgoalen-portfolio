@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tim Goalen software engineer and tv composer website">
+    <meta name="keywords" content="tim goalen, software engineer, tv composer, london, uk">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <title>Tim Goalen - Software Engineer & TV Composer</title>
+</head>
+
+<body>
+    <header>
+        <!-- Title and navigation -->
+        <nav class="navbar">
+            <div>
+                <a href="index.html">
+                    <h1 id="logo">TIM GOALEN</h1>
+                </a>
+            </div>
+            <button aria-label="toggle menu" id="responsiveMenuToggleButton">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="openIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="closeIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="navbar-links" id="nav-links">
+                <ul>
+                    <li>
+                        <a href="software-engineer.html" class="btn">Software Engineer</a>
+                    </li>
+                    <li>
+                        <a href="tv-composer.html" class="btn">TV Composer</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact form -->
+        <section id="contact">
+            <h2 class="contact-title">Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="user_name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="user_email" required>
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+            <div id="spinner-overlay" class="hidden">
+                <div id="sending-email-spinner"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer solution and font awesome script credit: Code Intitute Love Running https://github.com/Code-Institute-Org/love-running-2.0 -->
+    <footer>
+        <ul class="footer-links">
+            <li>
+                <a href="https://open.spotify.com/artist/4Yc0xTSqvYFXNE06EeHcyy?si=aSChe2SeR0uznDoi6NeJMA"
+                    target="_blank" rel="noopener" aria-label="Visit my Spotify page (opens in a new tab)"><i
+                        class="fa-brands fa-spotify"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com/TimGoa" target="_blank" rel="noopener"
+                    aria-label="Visit my Twitter page (opens in a new tab)"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+                <a href="https://www.imdb.com/name/nm3349868/?ref_=fn_al_nm_1" target="_blank" rel="noopener"
+                    aria-label="Visit my IMDb page (opens in a new tab)"><i class="fa-brands fa-imdb"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
+    <!-- link to external javaScript file -->
+    <script src="assets/js/script.js"></script>
+    <!-- emailjs script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("G7BPi3BMVxT9tP53B");
+        })();
+        window.onload = function () {
+            spinner = document.getElementById("spinner-overlay");
+            document.getElementById('contact-form').addEventListener('submit', function (event) {
+                event.preventDefault();
+                // Show the spinner when the form is submitted
+                spinner.classList.remove('hidden');
+                spinner.classList.add('show-flex');
+                // IDs from EmailJS account
+                emailjs.sendForm('default_service', 'contact_form', this)
+                    .then(function () {
+                        // Hide the spinner after the email is sent
+                        spinner.classList.add('hidden');
+                        spinner.classList.remove('show-flex');
+                        // Redirect to message received page
+                        window.location.href = "message-received.html";
+                    }, function (error) {
+                        // Hide the spinner in case of an error
+                        spinner.classList.add('hidden');
+                        spinner.classList.remove('show-flex');
+                        alert('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+
+</body>
+
+</html>
