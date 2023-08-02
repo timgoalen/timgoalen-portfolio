@@ -50,94 +50,97 @@
         </nav>
     </header>
 
-    <main>
-        <!-- About -->
-        <h2 id="software-engineer-about">ABOUT</h2>
-        <p class="about-text">Hi! 👋 I’m a Software Engineer (JavaScript • Python - <em>
-            currently learning: jQuery •
-                Bootstrap • Django •
-                PostgreSQL
-        </em>)</p>
-        <p class="about-text">and TV Composer (NETFLIX • BBC • Channel 4).</p>
-        <p class="about-text">Currently taking a Diploma in Full Stack Software Development with Code Intitute.</p>
+    <main id="software-engineer-main">
+        <!-- About section-->
+        <section id="software-eng-about-section">
+            <h2 id="software-engineer-about">ABOUT</h2>
+            <p class="about-text">Hi! 👋 I’m a Software Engineer (JavaScript • Python - <em>
+                    currently learning: jQuery •
+                    Bootstrap • Django •
+                    PostgreSQL
+                </em>)</p>
+            <p class="about-text">and TV Composer (NETFLIX • BBC • Channel 4).</p>
+            <p class="about-text">Currently taking a Diploma in Full Stack Software Development with Code Intitute.</p>
+        </section>
 
-        <h2>PROJECTS</h2>
+        <!-- Projects section -->
+        <section id="software-eng-projects-section">
+            <h2>PROJECTS</h2>
+            <div class="projects-grid-container">
+                <div>
+                    <picture>
+                        <source srcset="assets/images/identify-this-chord-screenshot.webp" type="image/webp" width="750"
+                            height="938">
+                        <source srcset="assets/images/identify-this-chord-screenshot.jpg" type="image/jpeg" width="750"
+                            height="938">
+                        <img src="assets/images/identify-this-chord-screenshot.jpg" id="projects-first-image"
+                            width="750" height="938" alt="Identify This Chord screenshot">
+                    </picture>
+                </div>
+                <div>
+                    <h3>Identify This Chord</h3>
+                    <p>A Music Quiz Game</p>
+                    <p><strong>JavaScript • Web Audio API • CSS • HTML</strong></p>
+                    <p>View the <a href="https://timgoalen.github.io/identify-this-chord/" target="_blank"
+                            rel="noopener">live site</a></p>
+                    <p>View the <a href="https://github.com/timgoalen/identify-this-chord" target="_blank"
+                            rel="noopener">code</a></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="assets/images/command-line-coffee-screenshot.webp" type="image/webp" width="750"
+                            height="938">
+                        <source srcset="assets/images/command-line-coffee-screenshot.jpg" type="image/jpeg" width="750"
+                            height="938">
+                        <img src="assets/images/command-line-coffee-screenshot.jpg" width="750" height="938"
+                            alt="Command Line Coffee screenshot">
+                    </picture>
+                </div>
+                <div>
+                    <h3>Command Line Coffee</h3>
+                    <p>Coffee ordering app with a command-line interface</p>
+                    <p><strong>Python • gspread API • Google Sheets database</strong></p>
+                    <p>View the <a href="https://command-line-coffee-c81dfcb828b5.herokuapp.com/" target="_blank"
+                            rel="noopener">live site</a></p>
+                    <p>View the <a href="https://github.com/timgoalen/command-line-coffee" target="_blank"
+                            rel="noopener">code</a></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="assets/images/composer-portfolio-screenshot.webp" type="image/webp" width="750"
+                            height="938">
+                        <source srcset="assets/images/composer-portfolio-screenshot.jpg" type="image/jpeg" width="750"
+                            height="938">
+                        <img src="assets/images/composer-portfolio-screenshot.jpg" width="750" height="938"
+                            alt="Composer Portfolio screenshot">
+                    </picture>
+                </div>
+                <div>
+                    <h3>Composer Portfolio</h3>
+                    <p>Website for TV Composer</p>
+                    <p><strong>HTML • CSS • JavaScript</strong></p>
+                    <p>View the <a href="https://timgoalen.github.io/tg-composer-portfolio/" target="_blank"
+                            rel="noopener">live site</a></p>
+                    <p>View the <a href="https://github.com/timgoalen/tg-composer-portfolio" target="_blank"
+                            rel="noopener">code</a></p>
+                </div>
+            </div>
+        </section>
 
-        <div class="projects-grid-container">
-            <div>
-                <picture>
-                    <source srcset="assets/images/identify-this-chord-screenshot.webp" type="image/webp" width="750"
-                        height="938">
-                    <source srcset="assets/images/identify-this-chord-screenshot.jpg" type="image/jpeg" width="750"
-                        height="938">
-                    <img src="assets/images/identify-this-chord-screenshot.jpg" id="projects-first-image" width="750"
-                        height="938" alt="Identify This Chord screenshot">
-                </picture>
+        <!-- Links section-->
+        <section id="software-eng-links-section">
+            <h2>LINKS</h2>
+            <div class="software-engineer-links">
+                <a href="https://www.linkedin.com/in/tim-goalen" class="software-engineer-link-items" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a href="https://github.com/timgoalen" class="software-engineer-link-items" target="_blank"
+                    rel="noopener">GitHub</a>
             </div>
-            <div>
-                <h3>Identify This Chord</h3>
-                <p>A Music Quiz Game</p>
-                <p><strong>JavaScript • Web Audio API • CSS • HTML</strong></p>
-                <p>View the <a href="https://timgoalen.github.io/identify-this-chord/" target="_blank"
-                        rel="noopener">live site</a></p>
-                <p>View the <a href="https://github.com/timgoalen/identify-this-chord" target="_blank"
-                        rel="noopener">code</a></p>
+            <div class="contact-page-link-container">
+                <a href="contact.html" class="software-engineer-link-items">Send me a message via the
+                    Contact Page</a>
             </div>
-
-            <div>
-                <picture>
-                    <source srcset="assets/images/command-line-coffee-screenshot.webp" type="image/webp" width="750"
-                        height="938">
-                    <source srcset="assets/images/command-line-coffee-screenshot.jpg" type="image/jpeg" width="750"
-                        height="938">
-                    <img src="assets/images/command-line-coffee-screenshot.jpg" width="750" height="938"
-                        alt="Command Line Coffee screenshot">
-                </picture>
-            </div>
-            <div>
-                <h3>Command Line Coffee</h3>
-                <p>Coffee ordering app with a command-line interface</p>
-                <p><strong>Python • gspread API • Google Sheets database</strong></p>
-                <p>View the <a href="https://command-line-coffee-c81dfcb828b5.herokuapp.com/" target="_blank"
-                        rel="noopener">live site</a></p>
-                <p>View the <a href="https://github.com/timgoalen/command-line-coffee" target="_blank"
-                        rel="noopener">code</a></p>
-            </div>
-
-            <div>
-                <picture>
-                    <source srcset="assets/images/composer-portfolio-screenshot.webp" type="image/webp" width="750"
-                        height="938">
-                    <source srcset="assets/images/composer-portfolio-screenshot.jpg" type="image/jpeg" width="750"
-                        height="938">
-                    <img src="assets/images/composer-portfolio-screenshot.jpg" width="750" height="938"
-                        alt="Composer Portfolio screenshot">
-                </picture>
-            </div>
-            <div>
-                <h3>Composer Portfolio</h3>
-                <p>Website for TV Composer</p>
-                <p><strong>HTML • CSS • JavaScript</strong></p>
-                <p>View the <a href="https://timgoalen.github.io/tg-composer-portfolio/" target="_blank"
-                        rel="noopener">live site</a></p>
-                <p>View the <a href="https://github.com/timgoalen/tg-composer-portfolio" target="_blank"
-                        rel="noopener">code</a></p>
-            </div>
-        </div>
-
-        <!-- Links -->
-
-        <h2>LINKS</h2>
-        <div class="software-engineer-links">
-            <a href="https://www.linkedin.com/in/tim-goalen" class="software-engineer-link-items" target="_blank"
-                rel="noopener">LinkedIn</a>
-            <a href="https://github.com/timgoalen" class="software-engineer-link-items" target="_blank"
-                rel="noopener">GitHub</a>
-        </div>
-        <div class="contact-page-link-container">
-            <a href="contact.html" class="software-engineer-link-items">Send me a message via the
-                Contact Page</a>
-        </div>
+        </section>
     </main>
 
     <!-- footer solution and font awesome script credit: Code Intitute Love Running https://github.com/Code-Institute-Org/love-running-2.0 -->
