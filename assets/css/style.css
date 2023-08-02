@@ -142,7 +142,8 @@ footer a:hover,
 #software-engineer-about,
 #about,
 #listen,
-#credits {
+#credits,
+.landing-page {
     padding-top: calc(var(--header-height) + 2.5%);
 }
 
@@ -150,15 +151,15 @@ footer a:hover,
 
 .landing-page {
     display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    height: 99vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     /* margin-top: 20%; */
-    gap: 5%;
+    /* gap: 5%; */
 }
 
 .landing-page-items {
-    height: 40%;
+    height: 90%;
     align-self: center;
     background-color: #a5d2ec;
     border-radius: 8px;
@@ -473,6 +474,8 @@ textarea:hover {
 }
 
 @media screen and (min-width: 600px) {
+
+
     .about-image {
         grid-area: left;
     }
@@ -533,6 +536,10 @@ textarea:hover {
 }
 
 @media screen and (min-width: 600px) {
+    .landing-page {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
     .about-image {
         -ms-grid-row: 3;
@@ -557,6 +564,11 @@ textarea:hover {
 }
 
 @media screen and (min-width: 724px) {
+    .landing-page {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
     .about-grid-container {
         grid-template-areas:
             "top top"
@@ -596,6 +608,19 @@ textarea:hover {
     main {
         padding: 0 10%;
     }
+
+    .landing-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 5%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .landing-page-items {
+       height: 40%; 
+    }
+    
 
     #software-engineer-main {
         padding: 0 15%;
