@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tim Goalen software engineer and tv composer website">
+    <meta name="keywords" content="tim goalen, software engineer, tv composer, london, uk">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
+    <title>Tim Goalen - Software Engineer & TV Composer</title>
+</head>
+
+<body>
+    <header>
+        <!-- Title and navigation -->
+        <nav class="navbar">
+            <div>
+                <a href="index.html">
+                    <h1 id="logo">• TIM GOALEN •</h1>
+                </a>
+            </div>
+            <button aria-label="toggle menu" id="responsiveMenuToggleButton">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="openIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="closeIcon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <div class="navbar-links" id="nav-links">
+                <ul>
+                    <li>
+                        <a href="software-engineer.html" class="btn active">Software Engineer</a>
+                    </li>
+                    <li>
+                        <a href="tv-composer.html" class="btn">TV Composer</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="btn">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="software-engineer-main">
+        <!-- About section-->
+        <section id="software-eng-about-section">
+            <h2 id="software-engineer-about">ABOUT</h2>
+            <p class="about-text">Hi! 👋 I’m a Software Engineer (JavaScript • Python - <em>
+                    currently learning: jQuery •
+                    Bootstrap • Django •
+                    PostgreSQL
+                </em>) and TV Composer (NETFLIX • BBC • Channel 4).</p>
+            <p class="about-text">Currently taking a Diploma in Full Stack Software Development with Code Intitute.</p>
+        </section>
+
+        <!-- Projects section -->
+        <section id="software-eng-projects-section">
+            <h2>PROJECTS</h2>
+            <div class="projects-grid-container">
+                <div>
+                    <picture>
+                        <source srcset="assets/images/identify-this-chord-screenshot.webp" type="image/webp" width="750"
+                            height="938">
+                        <source srcset="assets/images/identify-this-chord-screenshot.jpg" type="image/jpeg" width="750"
+                            height="938">
+                        <img src="assets/images/identify-this-chord-screenshot.jpg" id="projects-first-image"
+                            width="750" height="938" alt="Identify This Chord screenshot">
+                    </picture>
+                </div>
+                <div>
+                    <h3>Identify This Chord</h3>
+                    <p>A Music Quiz Game</p>
+                    <p><strong>JavaScript • Web Audio API • CSS • HTML</strong></p>
+                    <p>View the <a href="https://timgoalen.github.io/identify-this-chord/" target="_blank"
+                            rel="noopener">live site</a></p>
+                    <p>View the <a href="https://github.com/timgoalen/identify-this-chord" target="_blank"
+                            rel="noopener">code</a></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="assets/images/command-line-coffee-screenshot.webp" type="image/webp" width="750"
+                            height="938">
+                        <source srcset="assets/images/command-line-coffee-screenshot.jpg" type="image/jpeg" width="750"
+                            height="938">
+                        <img src="assets/images/command-line-coffee-screenshot.jpg" width="750" height="938"
+                            alt="Command Line Coffee screenshot">
+                    </picture>
+                </div>
+                <div>
+                    <h3>Command Line Coffee</h3>
+                    <p>Coffee ordering app with a command-line interface</p>
+                    <p><strong>Python • gspread API • Google Sheets database</strong></p>
+                    <p>View the <a href="https://command-line-coffee-c81dfcb828b5.herokuapp.com/" target="_blank"
+                            rel="noopener">live site</a></p>
+                    <p>View the <a href="https://github.com/timgoalen/command-line-coffee" target="_blank"
+                            rel="noopener">code</a></p>
+                </div>
+                <div>
+                    <picture>
+                        <source srcset="assets/images/composer-portfolio-screenshot.webp" type="image/webp" width="750"
+                            height="938">
+                        <source srcset="assets/images/composer-portfolio-screenshot.jpg" type="image/jpeg" width="750"
+                            height="938">
+                        <img src="assets/images/composer-portfolio-screenshot.jpg" width="750" height="938"
+                            alt="Composer Portfolio screenshot">
+                    </picture>
+                </div>
+                <div>
+                    <h3>Composer Portfolio</h3>
+                    <p>Website for TV Composer</p>
+                    <p><strong>HTML • CSS • JavaScript</strong></p>
+                    <p>View the <a href="https://timgoalen.github.io/tg-composer-portfolio/" target="_blank"
+                            rel="noopener">live site</a></p>
+                    <p>View the <a href="https://github.com/timgoalen/tg-composer-portfolio" target="_blank"
+                            rel="noopener">code</a></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Links section-->
+        <section id="software-eng-links-section">
+            <h2>LINKS</h2>
+            <div class="software-engineer-links">
+                <a href="https://www.linkedin.com/in/tim-goalen" class="software-engineer-link-items" target="_blank"
+                    rel="noopener">LinkedIn</a>
+                <a href="https://github.com/timgoalen" class="software-engineer-link-items" target="_blank"
+                    rel="noopener">GitHub</a>
+            </div>
+            <div class="contact-page-link-container">
+                <a href="contact.html" class="software-engineer-link-items contact-link">Send me a message via the
+                    Contact Page</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer solution and font awesome script credit: Code Intitute Love Running https://github.com/Code-Institute-Org/love-running-2.0 -->
+    <footer>
+        <ul class="footer-links">
+            <li>
+                <a href="https://www.linkedin.com/in/tim-goalen" target="_blank" rel="noopener"
+                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a href="https://github.com/timgoalen" target="_blank" rel="noopener"
+                    aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+    <!-- font awesome script -->
+    <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
+    <!-- link to external javaScript file -->
+    <script src="assets/js/script.js"></script>
+    <!-- emailjs script -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+</body>
+
+</html>

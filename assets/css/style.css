@@ -139,12 +139,101 @@ footer a:hover,
 }
 
 /* to make space for fixed nav bar */
+.landing-page,
+#software-engineer-about,
 #about,
 #listen,
 #credits,
 #contact {
     padding-top: calc(var(--header-height) + 2.5%);
 }
+
+/* == LANDING PAGE - index.html == */
+
+.landing-page {
+    display: grid;
+    height: 99vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    /* margin-top: 20%; */
+    /* gap: 5%; */
+}
+
+.landing-page-items {
+    height: 90%;
+    align-self: center;
+    background-color: #a5d2ec;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1rem + 0.5vw);
+}
+
+.landing-page-items:hover {
+    color: #EC0404;
+    border: 1px solid #EC0404;
+}
+
+/* == SOFTWARE ENGINEER PAGE == */
+
+.projects-grid-container img {
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+    -webkit-animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
+    margin: 9% 0 2% 0;
+}
+
+#projects-first-image {
+    margin-top: 0;
+}
+
+.projects-grid-container a {
+    background-color: #a5d2ec;
+}
+
+.projects-grid-container a:hover {
+    /* background-color: #a5d2ec; */
+    text-decoration: underline;
+    text-decoration-color: #EC0404;
+}
+
+.software-engineer-links {
+    display: grid;
+    height: 20vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5%;
+}
+
+.software-engineer-link-items,
+.contact-link {
+    height: 40%;
+    align-self: center;
+    background-color: #a5d2ec;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: calc(1rem + 0.5vw);
+}
+
+.contact-page-link-container {
+    height: 20vh;
+}
+
+.software-engineer-link-items:hover {
+    color: #EC0404;
+    border: 1px solid #EC0404;
+}
+
+.contact-link {
+    padding: 5%;
+    text-align: center;
+}
+
+/* == TV COMPOSER PAGE == */
 
 /* || About section */
 
@@ -231,10 +320,39 @@ audio {
     font-weight: 500;
 }
 
-/* || Contact section */
+.overflow-bug-fix-div {
+    /* margin-top value is workaround for grid overflow bug  */
+    margin: 15% auto 0;
+}
+
+/* || Super footer */
+
+.super-footer {
+    height: 20vh;
+}
+
+.super-footer p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.super-footer a {
+    background-color: #a5d2ec;
+}
+
+.super-footer a:hover {
+    text-decoration: underline;
+    text-decoration-color: #EC0404;
+}
+
+/* == CONTACT PAGE == */
 
 #contact {
     min-height: 90vh;
+    -webkit-animation-duration: 1.5s;
+    animation-duration: 1.5s;
+    -webkit-animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
 }
 
 input,
@@ -256,7 +374,7 @@ input[type=submit] {
     background-color: #FFF;
     border: 1px solid #000;
     color: #000;
-    /* to fix bug where submit button text wasn';'t showing on iPhone until hovered */
+    /* to fix bug where submit button text wasn't showing on iPhone until hovered */
 }
 
 input[type=submit]:hover {
@@ -415,13 +533,17 @@ textarea:hover {
         margin: 0;
     }
 
-    #contact {
-        /* margin-top value is workaround for grid overflow bug */
-        margin: 19% auto 0;
+    .overflow-bug-fix-div {
+        /* margin-top value is workaround for grid overflow bug  */
+        margin: 30% auto 0;
     }
 }
 
 @media screen and (min-width: 600px) {
+    .landing-page {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 
     .about-image {
         -ms-grid-row: 3;
@@ -446,6 +568,11 @@ textarea:hover {
 }
 
 @media screen and (min-width: 724px) {
+    .landing-page {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
     .about-grid-container {
         grid-template-areas:
             "top top"
@@ -483,7 +610,25 @@ textarea:hover {
 
 @media screen and (min-width: 900px) {
     main {
-        padding: 0 10%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .landing-page {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 5%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .landing-page-items {
+       height: 40%; 
+    }
+    
+    #software-engineer-main {
+        padding-left: 15%;
+        padding-right: 15%;
     }
 
     audio {
@@ -491,15 +636,25 @@ textarea:hover {
     }
 
     #contact {
-        /* margin-top value is workaround for grid overflow bug */
-        margin: 19% auto 0;
-        width: 70%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    .overflow-bug-fix-div {
+        /* margin-top value is workaround for grid overflow bug  */
+        margin: 30% auto 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
     main {
-        padding: 0 15%;
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+    #software-engineer-main {
+        padding-left: 20%;
+        padding-right: 20%;
     }
 
     #sending-email-spinner {
@@ -510,7 +665,13 @@ textarea:hover {
 
 @media screen and (min-width: 1500px) {
     main {
-        padding: 0 19%;
+        padding-left: 19%;
+        padding-right: 19%;
+    }
+
+    #software-engineer-main {
+        padding-left: 25%;
+        padding-right: 25%;
     }
 }
 
