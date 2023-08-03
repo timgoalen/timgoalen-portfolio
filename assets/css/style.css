@@ -166,6 +166,20 @@ footer a:hover,
     font-size: calc(1rem + 0.5vw);
 }
 
+.landing-item-1 {
+    -webkit-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+    -webkit-animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
+}
+
+.landing-item-2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-name: opacity-fade-in;
+    animation-name: opacity-fade-in;
+}
+
 .landing-page-items:hover {
     color: #EC0404;
     border: 1px solid #EC0404;
@@ -619,9 +633,9 @@ textarea:hover {
     }
 
     .landing-page-items {
-       height: 40%; 
+        height: 40%;
     }
-    
+
     #software-engineer-main {
         padding-left: 15%;
         padding-right: 15%;
