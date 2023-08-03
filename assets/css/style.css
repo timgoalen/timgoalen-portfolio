@@ -191,6 +191,8 @@ footer a:hover,
 
 /* == SOFTWARE ENGINEER PAGE == */
 
+/* || Projects section */
+
 .projects-grid-container img {
     -webkit-animation-duration: 3s;
     animation-duration: 3s;
@@ -208,10 +210,11 @@ footer a:hover,
 }
 
 .projects-grid-container a:hover {
-    /* background-color: #a5d2ec; */
     text-decoration: underline;
     text-decoration-color: #EC0404;
 }
+
+/* || Links section */
 
 .software-engineer-links {
     display: grid;
@@ -222,7 +225,7 @@ footer a:hover,
 }
 
 .software-engineer-link-items,
-.contact-link {
+#contact-link {
     height: 40%;
     align-self: center;
     background-color: #a5d2ec;
@@ -237,14 +240,16 @@ footer a:hover,
     height: 20vh;
 }
 
-.software-engineer-link-items:hover {
-    color: #EC0404;
-    border: 1px solid #EC0404;
-}
-
-.contact-link {
+#contact-link {
+    height: 60%;
     padding: 5%;
     text-align: center;
+}
+
+.software-engineer-link-items:hover,
+.contact-link:hover {
+    color: #EC0404;
+    border: 1px solid #EC0404;
 }
 
 /* == TV COMPOSER PAGE == */
@@ -490,6 +495,10 @@ textarea:hover {
 @media screen and (min-width: 460px) {
     .about-image {
         padding: 0 12%;
+    }
+
+    #contact-link {
+        height: 40%;
     }
 }
 
