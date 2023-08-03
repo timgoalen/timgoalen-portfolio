@@ -144,10 +144,10 @@ footer a:hover,
 
 /* to make space for fixed nav bar */
 .landing-page,
-#software-engineer-about,
+#software-eng-about-section,
 #about,
 #contact {
-    padding-top: calc(var(--header-height) + 2.5%);
+    padding-top: calc(var(--header-height) + 4%);
 }
 
 /* == LANDING PAGE - index.html == */
@@ -247,7 +247,7 @@ footer a:hover,
 }
 
 .software-engineer-link-items:hover,
-.contact-link:hover {
+#contact-link:hover {
     color: #EC0404;
     border: 1px solid #EC0404;
 }
