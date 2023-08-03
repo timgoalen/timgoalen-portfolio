@@ -38,6 +38,10 @@ p {
     margin: 1rem 0;
 }
 
+.opening-paragraphs {
+    margin-top: 0;
+}
+
 img {
     width: 100%;
     height: auto;
