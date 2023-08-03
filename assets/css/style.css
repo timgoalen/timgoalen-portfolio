@@ -367,7 +367,7 @@ audio {
 /* == CONTACT PAGE == */
 
 #contact {
-    min-height: 90vh;
+    min-height: 94vh;
     -webkit-animation-duration: 1.5s;
     animation-duration: 1.5s;
     -webkit-animation-name: opacity-fade-in;
