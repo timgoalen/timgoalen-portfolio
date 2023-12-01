@@ -167,7 +167,7 @@ main {
     margin: 0 auto 0.4rem auto;
     position: relative;
     z-index: 1;
-    max-width: 600px;
+    max-width: 800px;
 }
 
 .projects-all-container {
@@ -197,7 +197,22 @@ main {
 }
 
 .description-text {
-    color: #757575;
+    /* color: #757575; */
+}
+
+.skills-container {
+    /* padding: 0.5rem; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+span {
+    border: 1px solid #cdcdcd;
+    /* border-radius: 16px; */
+    padding: 1px 6px;
+    /* margin: 2px; */
 }
 
 .project-links-container {
@@ -230,15 +245,30 @@ main {
 }
 
 .contact-page-link-container {
-    border: 1px solid var(--secondary-colour-2);
+    /* border: 1px solid var(--secondary-colour-2); */
     border-radius: 8px;
     color: var(--secondary-colour-2);
-    background-color: var(--white);
+    /* background-color: var(--white); */
     height: 2.2rem;
     display: grid;
     place-items: center;
     margin: 2rem 0.5rem;
+    background: rgb(236,4,4);
+    background: linear-gradient(90deg, rgba(236,4,4,1) 0%, rgba(16,118,177,1) 33%, rgba(3,135,3,1) 66%, rgba(194,228,190,1) 100%);
 }
+
+.contact-page-link-container a {
+    background-color: var(--white);
+    height: 81%;
+    width: 99%;
+    /* padding: 6px; */
+    /* border: 3px solid #ffffff00; */
+    border-radius: 6px;
+    /* color: #f0f8ff00; */
+    text-align: center;
+    /* align-self: center; */
+}
+
 .software-engineer-links {
     display: flex;
     flex-direction: row;
@@ -333,9 +363,28 @@ input[type=submit] {
 
 /* MEDIA QUERIES */
 
-/* @media screen and (min-width: 1024px) {
-    .projects-all-container {
+@media screen and (min-width: 1024px) {
+    /* .projects-all-container {
         display: grid;
         grid-template-columns: 50% 50%;
+    } */
+
+    .project-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        max-width: 800px;
     }
-} */
+
+    img {
+        aspect-ratio: 3 / 2;
+        object-fit: cover;
+    }
+
+    .project-info {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
