@@ -106,6 +106,8 @@ main {
     font-size: 1.25rem;
 }
 
+/* -- LANDING PAGE -- */
+
 .landing-page {
     height: calc(100vh - 2.5rem);
     height: calc(100dvh - 2.5rem);
@@ -160,10 +162,12 @@ main {
 }
 
 #software-engineer-about {
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
 }
 
-#software-eng-about-section {
+#software-eng-about-section,
+#tv-composer-about-section {
+    padding: 0 0.4rem;
     margin: 0 auto 0.4rem auto;
     position: relative;
     z-index: 1;
@@ -180,7 +184,7 @@ main {
     background: var(--gradient-background-1);
     z-index: 1;
     box-shadow: var(--box-shadow);
-    backdrop-filter: blur(1px);
+    /* backdrop-filter: blur(1px); */
     margin: 0 auto 3rem auto;
     outline: 1px solid var(--white);
     overflow: hidden;
@@ -190,6 +194,11 @@ main {
 .project-container img {
     width: 100%;
     height: auto;
+}
+
+img {
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
 }
 
 .project-info {
@@ -246,7 +255,7 @@ span {
 
 .contact-page-link-container {
     /* border: 1px solid var(--secondary-colour-2); */
-    border-radius: 8px;
+    border-radius: 50px;
     color: var(--secondary-colour-2);
     /* background-color: var(--white); */
     height: 2.2rem;
@@ -263,7 +272,7 @@ span {
     width: 99%;
     /* padding: 6px; */
     /* border: 3px solid #ffffff00; */
-    border-radius: 6px;
+    border-radius: 50px;
     /* color: #f0f8ff00; */
     text-align: center;
     /* align-self: center; */
@@ -289,6 +298,116 @@ span {
 .software-engineer-link-items a:hover {
     border: none
 }
+
+/* -- TV COMPOSER PAGE -- */
+
+/* || Listen section */
+
+#listen {
+    padding: 0 0.4rem;
+}
+
+#audio-player {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 3% auto;
+    background: var(--gradient-background-1);
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--box-shadow);
+    /* backdrop-filter: blur(1px); */
+    outline: 1px solid var(--white);
+}
+
+.track {
+    padding: 0.3rem;
+    border-bottom: 1px solid #989898;
+    cursor: pointer;
+}
+
+.track-title {
+    font-size: 1.1rem;
+}
+
+.track-album {
+    font-size: 0.8rem;
+}
+
+.active-track {
+    color: #EC0404;
+    transition: color 0.2s ease;
+}
+
+#canvas {
+    width: 100%;
+    height: 3.5rem;
+}
+
+#controls-btns {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+#controls-timeline {
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+}
+
+#track-position-slider {
+    width: 99%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    height: 0.3rem;
+    outline: 1px solid #989898;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 0;
+    border: none;
+    padding: 0;
+}
+
+#track-position-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: white;
+    outline: 2px solid #EC0404;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 999;
+}
+
+#times {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    cursor: default;
+}
+
+#track-back-btn,
+#track-forward-btn {
+    font-size: 1.5rem;
+    color: #58b7ef;
+}
+
+#track-play-btn {
+    font-size: 2.7rem;
+    color: #58b7ef;
+}
+
+#track-back-btn:hover,
+#track-forward-btn:hover,
+#track-play-btn:hover {
+    color: #1595E0;
+    cursor: pointer;
+}   
 
 /* -- CONTACT PAGE -- */
 
