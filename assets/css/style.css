@@ -47,13 +47,22 @@ h2 {
     color: var(--secondary-colour-1);
     text-align: center;
     /* background-color: var(--off-white); */
+    /* backdrop-filter: blur(1px); */
 }
+
+/* p {
+    line-height: 1.5;
+} */
+
+/* ********SORT BACKDROP BLUR BUG (BLURRING FORGROUND) */
 
 .h2-container {
     position: relative;
     z-index: 1;
-    display: grid;
-    place-items: center;
+    /* display: grid; */
+    /* place-items: center; */
+    /* background-color: var(--off-white); */
+    margin: 1.5rem 0;
 }
 
 #svg-background {
@@ -91,14 +100,89 @@ main {
 }
 
 .navbar {
-    /* position: fixed; */
-    /* height: 6vh; */
+    position: fixed;
     height: 2.5rem;
+    top: 0;
+    left: 0;
+    width: 100%;
     padding: 0.4rem;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     /* background-color: var(--off-white); */
 }
+
+#nav-btn {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+    color: var(--primary-colour);
+    font-size: 1.25rem;
+}
+
+.nav-hidden {
+    display: none;
+}
+
+.navbar-links {
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    padding: 0 0.4rem;
+    background: var(--off-white);
+    color: var(--off-black);
+    /* z-index: 0; */
+}
+
+.navbar-links ul {
+    list-style-type: none;
+    /* display: flex; */
+    /* gap: 2rem; */
+}
+
+.link:hover {
+    /* text-decoration: underline; */
+    color: var(--secondary-colour-1);
+}
+
+#active-link {
+    color: var(--primary-colour);
+}
+
+/* class name from the Javascript part of the above Navbar solution */
+/* #responsiveMenuToggleButton {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 4%;
+}
+
+#responsiveMenuToggleButton svg {
+    height: 1.5rem;
+    width: 1.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#responsiveMenuToggleButton .openIcon {
+    display: block;
+}
+
+#responsiveMenuToggleButton .closeIcon {
+    display: none;
+}
+
+#responsiveMenuToggleButton.open .openIcon {
+    display: none;
+}
+
+#responsiveMenuToggleButton.open .closeIcon {
+    display: block;
+} */
 
 #logo {
     color: var(--primary-colour);
@@ -121,10 +205,22 @@ main {
     width: 100%;
     display: grid;
     justify-content: center;
+    /* position: relative; */
 }
+
+/* .landing-link-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    z-index: -1;
+} */
 
 .landing-page-items {
     color: var(--secondary-colour-1);
+    position: relative;
     border-radius: 1rem;
     height: 5.25rem;
     width: 14.5rem;
@@ -135,8 +231,16 @@ main {
     background: var(--gradient-background-1);
     z-index: 1;
     box-shadow: var(--box-shadow);
-    backdrop-filter: blur(1px);
-    outline: 1px solid var(--white);
+    /* backdrop-filter: blur(1.5px); */
+    outline: 1.5px solid var(--white);
+    /* filter: blur(0); */
+}
+
+
+.landing-page-text {
+    /* position: relative; */
+    /* z-index: 2; */
+    filter: blur(0px);
 }
 
 .landing-item-1 {
@@ -184,11 +288,15 @@ main {
     background: var(--gradient-background-1);
     z-index: 1;
     box-shadow: var(--box-shadow);
-    /* backdrop-filter: blur(1px); */
+    /* backdrop-filter: blur(1.5px); */
     margin: 0 auto 3rem auto;
-    outline: 1px solid var(--white);
+    outline: 1.5px solid var(--white);
     overflow: hidden;
     max-width: 600px;
+}
+
+.project-container:last-of-type {
+    margin: 0 auto 1.5rem auto;
 }
 
 .project-container img {
@@ -254,28 +362,20 @@ span {
 }
 
 .contact-page-link-container {
-    /* border: 1px solid var(--secondary-colour-2); */
-    border-radius: 50px;
-    color: var(--secondary-colour-2);
-    /* background-color: var(--white); */
-    height: 2.2rem;
-    display: grid;
-    place-items: center;
-    margin: 2rem 0.5rem;
-    background: rgb(236,4,4);
-    background: linear-gradient(90deg, rgba(236,4,4,1) 0%, rgba(16,118,177,1) 33%, rgba(3,135,3,1) 66%, rgba(194,228,190,1) 100%);
-}
-
-.contact-page-link-container a {
-    background-color: var(--white);
-    height: 81%;
-    width: 99%;
-    /* padding: 6px; */
-    /* border: 3px solid #ffffff00; */
-    border-radius: 50px;
-    /* color: #f0f8ff00; */
+    /* display: inline-block; */
+    padding: 10px 20px;
+    /* font-size: 16px; */
     text-align: center;
-    /* align-self: center; */
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    background: rgb(236, 4, 4);
+    background: linear-gradient(90deg, rgba(236, 4, 4, 1) 0%, rgba(16, 118, 177, 1) 33%, rgba(3, 135, 3, 1) 66%, rgba(194, 228, 190, 1) 100%);
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 5px;
 }
 
 .software-engineer-links {
@@ -301,6 +401,11 @@ span {
 
 /* -- TV COMPOSER PAGE -- */
 
+.credits-channel-text {
+    font-weight: 700;
+    color: var(--primary-colour);
+}
+
 /* || Listen section */
 
 #listen {
@@ -310,13 +415,13 @@ span {
 #audio-player {
     border-radius: 12px;
     width: 100%;
-    max-width: 400px;
+    max-width: 420px;
     margin: 0 auto 3% auto;
     background: var(--gradient-background-1);
     position: relative;
     z-index: 1;
     box-shadow: var(--box-shadow);
-    /* backdrop-filter: blur(1px); */
+    /* backdrop-filter: blur(1.5px); */
     outline: 1px solid var(--white);
 }
 
@@ -337,11 +442,6 @@ span {
 .active-track {
     color: #EC0404;
     transition: color 0.2s ease;
-}
-
-#canvas {
-    width: 100%;
-    height: 3.5rem;
 }
 
 #controls-btns {
@@ -407,7 +507,7 @@ span {
 #track-play-btn:hover {
     color: #1595E0;
     cursor: pointer;
-}   
+}
 
 /* -- CONTACT PAGE -- */
 
@@ -435,7 +535,7 @@ span {
     width: 94%;
     margin: 1rem auto 0 auto;
     padding: 0.6rem;
-    backdrop-filter: blur(1px);
+    /* backdrop-filter: blur(1.5px); */
 }
 
 #contact-form label {
@@ -506,4 +606,51 @@ input[type=submit] {
         justify-content: space-around;
         align-items: center;
     }
+
+    .credits-info {
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center; */
+    }
 }
+
+/* Navbar media query */
+/* @media screen and (max-width: 670px) {
+    #responsiveMenuToggleButton {
+        display: block;
+    }
+
+    .navbar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links.open {
+        display: block;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        font-size: calc(1rem + 0.5vw);
+        padding: 1rem;
+        -webkit-box-align: end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+        -webkit-transition: all 2s;
+        -o-transition: all 2s;
+        transition: all 2s;
+    }
+} */

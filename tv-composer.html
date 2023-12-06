@@ -23,30 +23,26 @@
                     <h1 id="logo">TIM GOALEN</h1>
                 </a>
             </div>
-            <!-- <button aria-label="toggle menu" id="responsiveMenuToggleButton">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="openIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="closeIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+
+            <!-- Hamburger Icon -->
+            <button aria-label="toggle menu" id="nav-btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="navbar-links" id="nav-links">
+
+            <!-- Nav links -->
+            <div class="navbar-links nav-hidden">
                 <ul>
                     <li>
-                        <a href="software-engineer.html" class="btn">Software Engineer</a>
+                        <a href="software-engineer.html" class="link">Software Engineer</a>
                     </li>
                     <li>
-                        <a href="tv-composer.html" class="btn active">TV Composer</a>
+                        <a href="tv-composer.html" class="link" id="active-link">TV Composer</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="btn">Contact</a>
+                        <a href="contact.html" class="link">Contact</a>
                     </li>
                 </ul>
-            </div> -->
+            </div>
         </nav>
     </header>
 
@@ -54,7 +50,7 @@
         <!-- About section -->
         <section id="tv-composer-about-section">
             <div class="about-grid-container">
-                <div class="about-title">
+                <div class="h2-container">
                     <h2>About</h2>
                 </div>
                 <div class="about-para-1">
@@ -90,7 +86,9 @@
 
         <!-- Listen section -->
         <section id="listen">
-            <h2>Listen</h2>
+            <div class="h2-container">
+                <h2>Listen</h2>
+            </div>
             <div id="audio-player">
                 <div id="track-list">
                     <!-- JavaScript appends content here -->
@@ -123,7 +121,9 @@
 
         <!-- Credits section -->
         <section id="credits">
-            <h2>Selected Credits</h2>
+            <div class="h2-container">
+                <h2>Selected Credits</h2>
+            </div>
             <div class="projects-all-container">
                 <div class="project-container">
                     <div>
@@ -136,13 +136,11 @@
                                 height="938" alt="Running with the Devil: The Wild World of John McAfee Netflix poster">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>Running with the Devil: The Wild World of John McAfee</h3>
-                        <ul>
-                            <li>Curious Films</li>
-                            <li>1 x 106mins</li>
-                            <li class="credits-channel-text">NETFLIX</li>
-                        </ul>
+                        <p class="credits-channel-text">NETFLIX</p>
+                        <p>Curious Films</p>
+                        <p>1 x 106mins</p>
                     </div>
                 </div>
 
@@ -155,13 +153,11 @@
                                 alt="Frank Gardner in a wheelchair in a darkly lit building">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>Being Frank: The Frank Gardner Story</h3>
-                        <ul>
-                            <li>Curious Films</li>
-                            <li>1 x 60 mins</li>
-                            <li class="credits-channel-text">BBC TWO</li>
-                        </ul>
+                        <p class="credits-channel-text">BBC TWO</p>
+                            <p>Curious Films</p>
+                            <p>1 x 60 mins</p>
                     </div>
                 </div>
 
@@ -176,13 +172,11 @@
                                 alt="Three doctors adjusting a brace around a patient's head">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>The Parkinson's Drug Trial: A Miracle Cure?</h3>
-                        <ul>
-                            <li>Passionate Productions</li>
-                            <li>2 x 60 mins</li>
-                            <li class="credits-channel-text">BBC TWO</li>
-                        </ul>
+                        <p class="credits-channel-text">BBC TWO</p>
+                            <p>Passionate Productions</p>
+                            <p>2 x 60 mins</p>
                         <p><em>“Possibly the most powerful documentary you will see this year”</em> ***** – The Telegraph
                         </p>
                         <p><i class="fa-solid fa-award"></i> Winner - Science and Natural History - RTS Awards 2020</p>
@@ -199,13 +193,11 @@
                                 alt="Billy Monger in a wheelchair surrounded by racecar driving memorabilia">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>Driven: The Billy Monger Story</h3>
-                        <ul>
-                            <li>Oxford Scientific Films</li>
-                            <li>1 x 60 mins</li>
-                            <li class="credits-channel-text">BBC TWO</li>
-                        </ul>
+                        <p class="credits-channel-text">BBC TWO</p>
+                            <p>Oxford Scientific Films</p>
+                            <p>1 x 60 mins</p>
                     </div>
                 </div>
 
@@ -220,13 +212,11 @@
                                 alt="Presenter Gordon Buchanan lying on the dirt eye to eye with three meerkats">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>Animals with Cameras</h3>
-                        <ul>
-                            <li>BBC Studios Natural History Unit</li>
-                            <li>3 x 60 mins</li>
-                            <li class="credits-channel-text">BBC ONE</li>
-                        </ul>
+                        <p class="credits-channel-text">BBC ONE</p>
+                            <p>BBC Studios Natural History Unit</p>
+                            <p>3 x 60 mins</p>
                     </div>
                 </div>
 
@@ -239,13 +229,11 @@
                                 alt="The actor Paul Kaye as Terry Pratchett in a graveyard">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>Terry Pratchett: Back in Black</h3>
-                        <ul>
-                            <li>BBC Studios</li>
-                            <li>1 x 60 mins Docudrama, starring Paul Kaye</li>
-                            <li class="credits-channel-text">BBC TWO</li>
-                        </ul>
+                        <p class="credits-channel-text">BBC TWO</p>
+                            <p>BBC Studios</p>
+                            <p>1 x 60 mins Docudrama, starring Paul Kaye</p>
                         <p><i class="fa-solid fa-award"></i> Winner - Best Documentary and Specialist Factual: Arts - RTS
                             Scotland Awards 2018</p>
                     </div>
@@ -262,12 +250,10 @@
                                 alt="The Hungry Corpse film poster">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>The Hungry Corpse</h3>
-                        <ul>
-                            <li>Rankin Film Productions/Beakus</li>
-                            <li>Animated short film starring Bill Nighy and Stephen Mangan</li>
-                        </ul>
+                            <p>Rankin Film Productions/Beakus</p>
+                            <p>Animated short film starring Bill Nighy and Stephen Mangan</p>
                         <p><i class="fa-solid fa-award"></i> Winner - Best Animation - 2013 Van d'Or Independent Film Awards
                         </p>
                         <p><i class="fa-solid fa-award"></i> Winner - Best Animation - The Smalls Festival 2013</p>
@@ -285,13 +271,12 @@
                                 alt="Radio Times magazine with Terry Pratchet on the Cover, with the headline 5 Minutes of Television that will change our lives">
                         </picture>
                     </div>
-                    <div class="project-info">
+                    <div class="credits-info">
                         <h3>Terry Pratchett: Choosing to Die</h3>
-                        <ul>
-                            <li>Keo Films</li>
-                            <li>1 x 60 mins</li>
-                            <li class="credits-channel-text">BBC TWO</li>
-                        </ul>
+                        <p class="credits-channel-text">BBC TWO</p>
+
+                            <p>Keo Films</p>
+                            <p>1 x 60 mins</p>
                         <p><em>“Tim Goalen's score fluidly underlined each turn”</em> - The Times</p>
                         <p><em>“A beautiful film with a well-crafted soundtrack”</em> - eyeforfilm.co.uk</p>
                         <p><i class="fa-solid fa-award"></i> Winner - Best Documentary - International Emmy Awards 2012</p>
@@ -386,6 +371,7 @@
     <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
     <!-- link to external javaScript files -->
     <script src="assets/js/script.js"></script>
+    <!-- Audio Player JS -->
     <script src="assets/js/audio-player.js"></script>
 
 </body>

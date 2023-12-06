@@ -23,30 +23,26 @@
                     <h1 id="logo">TIM GOALEN</h1>
                 </a>
             </div>
-            <!-- <button aria-label="toggle menu" id="responsiveMenuToggleButton">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="openIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="closeIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+
+            <!-- Hamburger Icon -->
+            <button aria-label="toggle menu" id="nav-btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="navbar-links" id="nav-links">
+
+            <!-- Nav links -->
+            <div class="navbar-links nav-hidden">
                 <ul>
                     <li>
-                        <a href="software-engineer.html" class="btn active">Software Engineer</a>
+                        <a href="software-engineer.html" class="link" id="active-link">Software Engineer</a>
                     </li>
                     <li>
-                        <a href="tv-composer.html" class="btn">TV Composer</a>
+                        <a href="tv-composer.html" class="link">TV Composer</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="btn">Contact</a>
+                        <a href="contact.html" class="link">Contact</a>
                     </li>
                 </ul>
-            </div> -->
+            </div>
         </nav>
     </header>
 
@@ -112,13 +108,44 @@
                         <h3>Identify This Chord</h3>
                         <p class="description-text">A Music Quiz Game</p>
                         <div class="card-spacer"></div>
-                        <p>JavaScript • Web Audio API • CSS • HTML</p>
+                        <div class="skills-container">
+                            <span>JavaScript</span><span>Web Audio API</span><span>CSS</span><span>HTML</span>
+                        </div>
                         <div class="card-spacer"></div>
                         <div class="project-links-container">
                             <a href="https://timgoalen.github.io/identify-this-chord/" target="_blank" rel="noopener"
                                 class="project-links">Live
                                 Site</a>
                             <a href="https://github.com/timgoalen/identify-this-chord" target="_blank" rel="noopener"
+                                class="project-links">Code</a>
+                        </div>
+                        <div class="card-spacer"></div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div>
+                        <picture>
+                            <source srcset="assets/images/yaras-drawing-example.webp" type="image/webp" width="750"
+                                height="938">
+                            <source srcset="assets/images/yaras-drawing-example.jpg" type="image/jpeg" width="750"
+                                height="938">
+                            <img src="assets/images/yaras-drawing-example.jpg" width="750" height="938"
+                                alt="Yara's Drawing App screenshot">
+                        </picture>
+                    </div>
+                    <div class="project-info">
+                        <h3>Yara's Drawing App</h3>
+                        <p class="description-text">JavaScript drawing app using HTML canvas. For mouse and touchscreens.</p>
+                        <div class="card-spacer"></div>
+                        <div class="skills-container">
+                            <span>JavaScript</span><span>HTML Canvas</span>
+                        </div>
+                        <div class="card-spacer"></div>
+                        <div class="project-links-container">
+                            <a href="https://timgoalen.github.io/yaras-drawing-app/" target="_blank" rel="noopener"
+                                class="project-links">Live Site</a>
+                            <a href="https://github.com/timgoalen/yaras-drawing-app" target="_blank" rel="noopener"
                                 class="project-links">Code</a>
                         </div>
                         <div class="card-spacer"></div>
@@ -140,68 +167,14 @@
                         <h3>Command Line Coffee</h3>
                         <p class="description-text">Coffee ordering app with a command-line interface</p>
                         <div class="card-spacer"></div>
-                        <p>Python • gspread API • Google Sheets database</p>
+                        <div class="skills-container">
+                            <span>Python</span><span>gspread API</span><span>Google Sheets database</span>
+                        </div>
                         <div class="card-spacer"></div>
                         <div class="project-links-container">
                             <a href="https://command-line-coffee-c81dfcb828b5.herokuapp.com/" target="_blank"
                                 rel="noopener" class="project-links">Desktop</a>
                             <a href="https://github.com/timgoalen/command-line-coffee" target="_blank" rel="noopener"
-                                class="project-links">Code</a>
-                        </div>
-                        <div class="card-spacer"></div>
-                    </div>
-                </div>
-
-
-                <div class="project-container">
-                    <div>
-                        <picture>
-                            <source srcset="assets/images/yaras-drawing-example.webp" type="image/webp" width="750"
-                                height="938">
-                            <source srcset="assets/images/yaras-drawing-example.jpg" type="image/jpeg" width="750"
-                                height="938">
-                            <img src="assets/images/yaras-drawing-example.jpg" width="750" height="938"
-                                alt="Yara's Drawing App screenshot">
-                        </picture>
-                    </div>
-                    <div class="project-info">
-                        <h3>Yara's Drawing App</h3>
-                        <p class="description-text">JavaScript drawing app using HTML canvas. For mouse and touchscreens.</p>
-                        <div class="card-spacer"></div>
-                        <p>JavaScript • HTML Canvas</p>
-                        <div class="card-spacer"></div>
-                        <div class="project-links-container">
-                            <a href="https://timgoalen.github.io/yaras-drawing-app/" target="_blank" rel="noopener"
-                                class="project-links">Live Site</a>
-                            <a href="https://github.com/timgoalen/yaras-drawing-app" target="_blank" rel="noopener"
-                                class="project-links">Code</a>
-                        </div>
-                        <div class="card-spacer"></div>
-                    </div>
-                </div>
-
-
-                <div class="project-container">
-                    <div>
-                        <picture>
-                            <source srcset="assets/images/composer-portfolio-screenshot.webp" type="image/webp"
-                                width="750" height="938">
-                            <source srcset="assets/images/composer-portfolio-screenshot.jpg" type="image/jpeg"
-                                width="750" height="938">
-                            <img src="assets/images/composer-portfolio-screenshot.jpg" width="750" height="938"
-                                alt="Composer Portfolio screenshot">
-                        </picture>
-                    </div>
-                    <div class="project-info">
-                        <h3>Composer Portfolio</h3>
-                        <p class="description-text">Website for TV Composer</p>
-                        <div class="card-spacer"></div>
-                        <p>HTML • CSS • JavaScript</p>
-                        <div class="card-spacer"></div>
-                        <div class="project-links-container">
-                            <a href="https://timgoalen.github.io/tg-composer-portfolio/" target="_blank" rel="noopener"
-                                class="project-links">Live Site</a>
-                            <a href="https://github.com/timgoalen/tg-composer-portfolio" target="_blank" rel="noopener"
                                 class="project-links">Code</a>
                         </div>
                         <div class="card-spacer"></div>
@@ -215,9 +188,9 @@
             <div class="h2-container">
                 <h2>GET IN TOUCH</h2>
             </div>
-            <div class="contact-page-link-container">
+            <button class="contact-page-link-container">
                 <a href="contact.html" id="contact-link">Send me a message</a>
-            </div>
+            </button>
             <div class="software-engineer-links">
                 <a href="https://www.linkedin.com/in/tim-goalen" class="software-engineer-link-items" target="_blank"
                     rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
@@ -288,9 +261,6 @@
     <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
     <!-- link to external javaScript file -->
     <script src="assets/js/script.js"></script>
-    <!-- emailjs script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
 </body>
 
 </html>
