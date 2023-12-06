@@ -329,6 +329,10 @@ main {
     padding: 0 0.4rem;
 }
 
+.credits-info {
+    padding: 0 0.4rem 0.6rem 0.4rem;
+}
+
 .description-text {
     /* color: #757575; */
 }
@@ -429,6 +433,13 @@ span {
 .credits-channel-text {
     font-weight: 700;
     color: var(--primary-colour);
+}
+
+.credits-awards-container {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-top: 0.4rem;
+    color: #4c4c4c;
 }
 
 /* || Listen section */
