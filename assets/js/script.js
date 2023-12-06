@@ -25,11 +25,13 @@ let isNavBarOpen = false;
 function handleNavBtnClick() {
   if (isNavBarOpen === false) {
     navBtn.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
-    navBarLinks.classList.remove('nav-hidden');
+    // navBarLinks.classList.remove('nav-hidden');
+    navBarLinks.classList.add('show-nav-links');
     isNavBarOpen = true;
   } else {
     navBtn.innerHTML = `<i class="fa-solid fa-bars"></i>`;
-    navBarLinks.classList.add('nav-hidden');
+    // navBarLinks.classList.add('nav-hidden');
+    navBarLinks.classList.remove('show-nav-links');
     isNavBarOpen = false;
   }
 }

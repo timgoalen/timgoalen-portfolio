@@ -11,7 +11,8 @@
     --off-black: #1B1B1B;
     --off-white: #FAF9F6;
     --white: #FFF;
-    --gradient-background-1: linear-gradient(153deg, rgb(255 255 255) 10%, rgba(255, 255, 255, 0) 100%);
+    --gradient-background-1: linear-gradient(153deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 100%);
+    --gradient-background-2: linear-gradient(225deg, rgb(250, 249, 246) 50%, rgba(250, 249, 246, 0) 100%);
     --box-shadow: 0px 4px 40px 0px rgba(219, 219, 219, 0.65), -20px -20px 40px 0px #FFFFFF;
     --max-width: 1400px;
 }
@@ -89,7 +90,7 @@ h2 {
 
 header {
     position: relative;
-    z-index: 1;
+    z-index: 2;
     max-width: var(--max-width);
     margin: auto;
 }
@@ -100,7 +101,7 @@ main {
 }
 
 .navbar {
-    position: fixed;
+    /* position: fixed; */
     height: 2.5rem;
     top: 0;
     left: 0;
@@ -127,18 +128,33 @@ main {
 
 .navbar-links {
     position: absolute;
-    top: 2.5rem;
-    right: 0;
+    top: 1.8rem;
+    /* right: 0; */
     padding: 0 0.4rem;
-    background: var(--off-white);
+    /* background: #faf9f6; */
     color: var(--off-black);
     /* z-index: 0; */
+    backdrop-filter: blur(-1px);
+    width: 100%;
+    text-align: end;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--gradient-background-2);
+    /* backdrop-filter: blur(2px); */
+    right: -100%;
+    transition: right 0.2s ease;
 }
 
 .navbar-links ul {
     list-style-type: none;
+    line-height: 2.5;
     /* display: flex; */
     /* gap: 2rem; */
+}
+
+.show-nav-links {
+    right: 0;
+    display: block;
 }
 
 .link:hover {
@@ -615,42 +631,10 @@ input[type=submit] {
         /* align-items: center; */
     }
 }
-
 /* Navbar media query */
-/* @media screen and (max-width: 670px) {
-    #responsiveMenuToggleButton {
-        display: block;
-    }
-
+@media screen and (min-width: 1060px) {
     .navbar {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        position: fixed;
+        padding: 1.5rem;
     }
-
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-
-    .navbar-links.open {
-        display: block;
-    }
-
-    .navbar-links ul {
-        width: 100%;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        font-size: calc(1rem + 0.5vw);
-        padding: 1rem;
-        -webkit-box-align: end;
-        -ms-flex-align: end;
-        align-items: flex-end;
-        -webkit-transition: all 2s;
-        -o-transition: all 2s;
-        transition: all 2s;
-    }
-} */
+}
