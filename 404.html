@@ -19,63 +19,84 @@
         <!-- Title and navigation -->
         <nav class="navbar">
             <div>
-                <a href="index.html"><h1 id="logo">• TIM GOALEN •</h1></a>
+                <a href="index.html">
+                    <h1 id="logo">TIM GOALEN</h1>
+                </a>
             </div>
-            <button aria-label="toggle menu" id="responsiveMenuToggleButton">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="openIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="closeIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+
+            <!-- Hamburger Icon -->
+            <button aria-label="toggle menu" id="nav-btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="navbar-links" id="nav-links">
+
+            <!-- Nav links -->
+            <div class="navbar-links">
                 <ul>
                     <li>
-                        <a href="software-engineer.html" class="btn active">Software Engineer</a>
+                        <a href="software-engineer.html" class="link">Software Engineer</a>
                     </li>
                     <li>
-                        <a href="tv-composer.html" class="btn">TV Composer</a>
+                        <a href="tv-composer.html" class="link">TV Composer</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="btn">Contact</a>
+                        <a href="contact.html" class="link">Contact</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="error404-page-main">
-        <h2 class="error404-message">Whoops, that page doesn't exist</h2>
-        <a href="index.html" class="error404-page-return-home">Home</a>
-    </main>
+    <main class="message-received-main">
 
-    <!-- footer and font awesome script credit: Code Intitute Love Running **add URL*** -->
-    <footer>
-        <ul class="footer-links">
-            <li>
-                <a href="https://www.linkedin.com/in/tim-goalen" target="_blank" rel="noopener"
-                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/timgoalen"
-                    target="_blank" rel="noopener" aria-label="Visit my GitHub page (opens in a new tab)"><i
-                        class="fa-brands fa-github"></i></a>
-            </li>
-            <li>
-                <a href="https://open.spotify.com/artist/4Yc0xTSqvYFXNE06EeHcyy?si=aSChe2SeR0uznDoi6NeJMA"
-                    target="_blank" rel="noopener" aria-label="Visit my Spotify page (opens in a new tab)"><i
-                        class="fa-brands fa-spotify"></i></a>
-            </li>
-            <li>
-                <a href="https://www.imdb.com/name/nm3349868/?ref_=fn_al_nm_1" target="_blank" rel="noopener"
-                    aria-label="Visit my IMDb page (opens in a new tab)"><i class="fa-brands fa-imdb"></i></a>
-            </li>
-        </ul>
-    </footer>
+        <div class="h2-container">
+            <h2 class="message-received-confirmation">404 Error: page doesn't exist</h2>
+        </div>
+
+        <a href="index.html" class="message-received-return-home">Home</a>
+
+        <!-- SVG Backgrounds -->
+
+        <div id="svg-background">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dots" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <circle cx="5" cy="5" r="1" fill="rgba(16, 118, 177, 0.21)" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dots)" />
+            </svg>
+        </div>
+
+        <div id="svg-top-mask">
+            <svg viewBox="0 0 320 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M320 67.8024L309.333 71.5692C298.667 75.336 277.333 82.8696 256 73.4526C234.667 64.0356 213.333 37.668 192 35.7846C170.667 33.9012 149.333 56.502 128 58.3854C106.667 60.2688 85.3333 41.4348 64 33.9012C42.6667 26.3676 21.3333 30.1344 10.6667 32.0178L-3.43728e-05 33.9012L-3.73366e-05 2.79753e-05L10.6666 2.70428e-05C21.3333 2.61103e-05 42.6666 2.42453e-05 64 2.23802e-05C85.3333 2.05152e-05 106.667 1.86502e-05 128 1.67852e-05C149.333 1.49202e-05 170.667 1.30551e-05 192 1.11901e-05C213.333 9.3251e-06 234.667 7.46008e-06 256 5.59506e-06C277.333 3.73004e-06 298.667 1.86502e-06 309.333 9.3251e-07L320 0L320 67.8024Z"
+                    fill="url(#paint0_linear_7931_575)" />
+                <defs>
+                    <linearGradient id="paint0_linear_7931_575" x1="160" y1="78" x2="160" y2="1.39876e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#FAF9F6" stop-opacity="0" />
+                        <stop offset="1" stop-color="#FAF9F6" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div id="svg-bottom-mask">
+            <svg viewBox="0 0 320 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 10.1976L10.6667 6.43079C21.3333 2.66398 42.6667 -4.86962 64 4.54739C85.3333 13.9644 106.667 40.332 128 42.2154C149.333 44.0988 170.667 21.498 192 19.6146C213.333 17.7312 234.667 36.5652 256 44.0988C277.333 51.6324 298.667 47.8656 309.333 45.9822L320 44.0988V78H309.333C298.667 78 277.333 78 256 78C234.667 78 213.333 78 192 78C170.667 78 149.333 78 128 78C106.667 78 85.3333 78 64 78C42.6667 78 21.3333 78 10.6667 78H0V10.1976Z"
+                    fill="url(#paint0_linear_7931_574)" />
+                <defs>
+                    <linearGradient id="paint0_linear_7931_574" x1="160" y1="0" x2="160" y2="78"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#FAF9F6" stop-opacity="0" />
+                        <stop offset="1" stop-color="#FAF9F6" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </main>
 
     <!-- Font Awesome script -->
     <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>

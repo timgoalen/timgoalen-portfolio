@@ -20,30 +20,26 @@
         <nav class="navbar">
             <div>
                 <a href="index.html">
-                    <h1 id="logo">• TIM GOALEN •</h1>
+                    <h1 id="logo">TIM GOALEN</h1>
                 </a>
             </div>
-            <button aria-label="toggle menu" id="responsiveMenuToggleButton">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="openIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                    stroke="currentColor" class="closeIcon">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+
+            <!-- Hamburger Icon -->
+            <button aria-label="toggle menu" id="nav-btn">
+                <i class="fa-solid fa-bars"></i>
             </button>
-            <div class="navbar-links" id="nav-links">
+
+            <!-- Nav links -->
+            <div class="navbar-links">
                 <ul>
                     <li>
-                        <a href="software-engineer.html" class="btn active">Software Engineer</a>
+                        <a href="software-engineer.html" class="link" id="active-link">Software Engineer</a>
                     </li>
                     <li>
-                        <a href="tv-composer.html" class="btn">TV Composer</a>
+                        <a href="tv-composer.html" class="link">TV Composer</a>
                     </li>
                     <li>
-                        <a href="contact.html" class="btn">Contact</a>
+                        <a href="contact.html" class="link">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -53,155 +49,183 @@
     <main id="software-engineer-main">
         <!-- About section-->
         <section id="software-eng-about-section">
-            <h2 id="software-engineer-about">ABOUT</h2>
-            <p class="about-text opening-paragraphs">Hi! 👋 I’m a Software Engineer (JavaScript • Python • Django) and TV Composer (NETFLIX • BBC • Channel 4).</p>
+            <div class="h2-container">
+                <h2 id="software-engineer-about">ABOUT</h2>
+            </div>
+            <p class="about-text opening-paragraphs">Hi! I’m a Software Engineer (JavaScript • Python • Django) and TV
+                Composer (NETFLIX • BBC • Channel 4).</p>
+            <br>
             <p class="about-text">Currently taking a Diploma in Full Stack Software Development with Code Institute.</p>
         </section>
 
         <!-- Projects section -->
         <section id="software-eng-projects-section">
-            <h2>PROJECTS</h2>
-            <div class="projects-grid-container">
-                <div>
-                    <picture>
-                        <source srcset="assets/images/magical-places-london-temp-screenshot.webp" type="image/webp" width="750"
-                            height="938">
-                        <source srcset="assets/images/magical-places-london-temp-screenshot.jpg" type="image/jpeg" width="750"
-                            height="938">
-                        <img src="assets/images/magical-places-london-temp-screenshot.jpg" id="projects-first-image"
-                            width="750" height="938" alt="Magical Places - London screenshot">
-                    </picture>
-                </div>
-                <div>
-                    <h3>Magical Places - London</h3>
-                    <p>Hidden gems - share and comment on your favourite places in London.</p>
-                    <p>A map-based blog site with CRUD functionality.</p>
-                    <p><strong>JavaScript • Django • Python • PostgreSQL • Google Maps API • Heroku</strong></p>
-                    <p>View the <a href="https://magical-places-london-7d2df0d61638.herokuapp.com/" target="_blank"
-                            rel="noopener">live site</a></p>
-                    <p>View the <a href="https://github.com/timgoalen/magical-places-london" target="_blank"
-                            rel="noopener">code</a></p>
+            <div class="h2-container">
+                <h2>PROJECTS</h2>
+            </div>
+            <div class="projects-all-container">
+                <div class="project-container">
+                    <div>
+                        <img src="assets/images/magical-places-london-screenshot.jpg"
+                            alt="Magical Places - London screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Magical Places - London</h3>
+                        <p class="description-text">A map-based blog site with CRUD functionality.</p>
+                        <div class="card-spacer"></div>
+                        <div class="skills-container">
+                            <span>JavaScript</span><span>Django</span><span>Python</span><span>PostgreSQL</span><span>Google
+                                Maps API</span><span>Heroku</span></div>
+                        <div class="card-spacer"></div>
+                        <div class="project-links-container">
+                            <a href="https://magical-places-london-7d2df0d61638.herokuapp.com/" target="_blank"
+                                rel="noopener" class="project-links">Live Site</a>
+                            <a href="https://github.com/timgoalen/magical-places-london" target="_blank" rel="noopener"
+                                class="project-links">Code</a>
+                        </div>
+                        <div class="card-spacer"></div>
+                    </div>
                 </div>
 
-                <div>
-                    <picture>
-                        <source srcset="assets/images/identify-this-chord-screenshot.webp" type="image/webp" width="750"
-                            height="938">
-                        <source srcset="assets/images/identify-this-chord-screenshot.jpg" type="image/jpeg" width="750"
-                            height="938">
+                <div class="project-container">
+                    <div>
                         <img src="assets/images/identify-this-chord-screenshot.jpg"
-                            width="750" height="938" alt="Identify This Chord screenshot">
-                    </picture>
-                </div>
-                <div>
-                    <h3>Identify This Chord</h3>
-                    <p>A Music Quiz Game</p>
-                    <p><strong>JavaScript • Web Audio API • CSS • HTML</strong></p>
-                    <p>View the <a href="https://timgoalen.github.io/identify-this-chord/" target="_blank"
-                            rel="noopener">live site</a></p>
-                    <p>View the <a href="https://github.com/timgoalen/identify-this-chord" target="_blank"
-                            rel="noopener">code</a></p>
+                            alt="Identify This Chord screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Identify This Chord</h3>
+                        <p class="description-text">A Music Quiz Game</p>
+                        <div class="card-spacer"></div>
+                        <div class="skills-container">
+                            <span>JavaScript</span><span>Web Audio API</span>
+                        </div>
+                        <div class="card-spacer"></div>
+                        <div class="project-links-container">
+                            <a href="https://timgoalen.github.io/identify-this-chord/" target="_blank" rel="noopener"
+                                class="project-links">Live
+                                Site</a>
+                            <a href="https://github.com/timgoalen/identify-this-chord" target="_blank" rel="noopener"
+                                class="project-links">Code</a>
+                        </div>
+                        <div class="card-spacer"></div>
+                    </div>
                 </div>
 
-                <div>
-                    <picture>
-                        <source srcset="assets/images/command-line-coffee-screenshot.webp" type="image/webp" width="750"
-                            height="938">
-                        <source srcset="assets/images/command-line-coffee-screenshot.jpg" type="image/jpeg" width="750"
-                            height="938">
-                        <img src="assets/images/command-line-coffee-screenshot.jpg" width="750" height="938"
+                <div class="project-container">
+                    <div>
+                        <img src="assets/images/yaras-drawing-mockup.jpg" alt="Yara's Drawing App screenshot">
+                    </div>
+                    <div class="project-info">
+                        <h3>Yara's Drawing App</h3>
+                        <p class="description-text">JavaScript drawing app using HTML canvas. For mouse and
+                            touchscreens.</p>
+                        <div class="card-spacer"></div>
+                        <div class="skills-container">
+                            <span>JavaScript</span><span>HTML Canvas</span>
+                        </div>
+                        <div class="card-spacer"></div>
+                        <div class="project-links-container">
+                            <a href="https://timgoalen.github.io/yaras-drawing-app/" target="_blank" rel="noopener"
+                                class="project-links">Live Site</a>
+                            <a href="https://github.com/timgoalen/yaras-drawing-app" target="_blank" rel="noopener"
+                                class="project-links">Code</a>
+                        </div>
+                        <div class="card-spacer"></div>
+                    </div>
+                </div>
+
+                <div class="project-container">
+                    <div>
+                        <img src="assets/images/command-line-coffee-screenshot.jpg"
                             alt="Command Line Coffee screenshot">
-                    </picture>
-                </div>
-                <div>
-                    <h3>Command Line Coffee</h3>
-                    <p>Coffee ordering app with a command-line interface</p>
-                    <p><strong>Python • gspread API • Google Sheets database</strong></p>
-                    <p>View the <a href="https://command-line-coffee-c81dfcb828b5.herokuapp.com/" target="_blank"
-                            rel="noopener">live site</a> [desktop only]</p>
-                    <p>View the <a href="https://github.com/timgoalen/command-line-coffee" target="_blank"
-                            rel="noopener">code</a></p>
-                </div>
-
-                <div>
-                    <picture>
-                        <source srcset="assets/images/yaras-drawing-example.webp" type="image/webp" width="750"
-                            height="938">
-                        <source srcset="assets/images/yaras-drawing-example.jpg" type="image/jpeg" width="750"
-                            height="938">
-                        <img src="assets/images/yaras-drawing-example.jpg" width="750" height="938"
-                            alt="Yara's Drawing App screenshot">
-                    </picture>
-                </div>
-                <div>
-                    <h3>Yara's Drawing App</h3>
-                    <p>JavaScript drawing app using HTML canvas. For mouse and touchscreens.</p>
-                    <p><strong>JavaScript • HTML Canvas</strong></p>
-                    <p>View the <a href="https://timgoalen.github.io/yaras-drawing-app/" target="_blank"
-                            rel="noopener">live site</a></p>
-                    <p>View the <a href="https://github.com/timgoalen/yaras-drawing-app" target="_blank"
-                            rel="noopener">code</a></p>
-                </div>
-
-                <div>
-                    <picture>
-                        <source srcset="assets/images/composer-portfolio-screenshot.webp" type="image/webp" width="750"
-                            height="938">
-                        <source srcset="assets/images/composer-portfolio-screenshot.jpg" type="image/jpeg" width="750"
-                            height="938">
-                        <img src="assets/images/composer-portfolio-screenshot.jpg" width="750" height="938"
-                            alt="Composer Portfolio screenshot">
-                    </picture>
-                </div>
-                <div>
-                    <h3>Composer Portfolio</h3>
-                    <p>Website for TV Composer</p>
-                    <p><strong>HTML • CSS • JavaScript</strong></p>
-                    <p>View the <a href="https://timgoalen.github.io/tg-composer-portfolio/" target="_blank"
-                            rel="noopener">live site</a></p>
-                    <p>View the <a href="https://github.com/timgoalen/tg-composer-portfolio" target="_blank"
-                            rel="noopener">code</a></p>
+                    </div>
+                    <div class="project-info">
+                        <h3>Command Line Coffee</h3>
+                        <p class="description-text">Coffee ordering app with a command-line interface</p>
+                        <div class="card-spacer"></div>
+                        <div class="skills-container">
+                            <span>Python</span><span>gspread API</span><span>Google Cloud
+                                Platform</span><span>Heroku</span>
+                        </div>
+                        <div class="card-spacer"></div>
+                        <div class="project-links-container">
+                            <a href="https://command-line-coffee-c81dfcb828b5.herokuapp.com/" target="_blank"
+                                rel="noopener" class="project-links">Desktop</a>
+                            <a href="https://github.com/timgoalen/command-line-coffee" target="_blank" rel="noopener"
+                                class="project-links">Code</a>
+                        </div>
+                        <div class="card-spacer"></div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Links section-->
         <section id="software-eng-links-section">
-            <h2>LINKS</h2>
-            <div class="software-engineer-links">
-                <a href="https://www.linkedin.com/in/tim-goalen" class="software-engineer-link-items" target="_blank"
-                    rel="noopener">LinkedIn</a>
-                <a href="https://github.com/timgoalen" class="software-engineer-link-items" target="_blank"
-                    rel="noopener">GitHub</a>
+            <div class="h2-container">
+                <h2>GET IN TOUCH</h2>
             </div>
+
             <div class="contact-page-link-container">
-                <a href="contact.html" id="contact-link">Send me a message via the
-                    Contact Page</a>
+                <a href="contact.html" id="contact-link">Send me a message</a>
+            </div>
+
+            <div class="software-engineer-links">
+                <a href="https://www.linkedin.com/in/tim-goalen" aria-label="LinkedIn" class="software-engineer-link-items" target="_blank"
+                    rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/timgoalen" aria-label="GitHub" class="software-engineer-link-items" target="_blank"
+                    rel="noopener"><i class="fa-brands fa-github"></i></a>
             </div>
         </section>
-    </main>
 
-    <!-- footer solution and font awesome script credit: Code Intitute Love Running https://github.com/Code-Institute-Org/love-running-2.0 -->
-    <footer>
-        <ul class="footer-links">
-            <li>
-                <a href="https://www.linkedin.com/in/tim-goalen" target="_blank" rel="noopener"
-                    aria-label="Visit my LinkedIn page (opens in a new tab)"><i class="fa-brands fa-linkedin"></i></a>
-            </li>
-            <li>
-                <a href="https://github.com/timgoalen" target="_blank" rel="noopener"
-                    aria-label="Visit my GitHub page (opens in a new tab)"><i class="fa-brands fa-github"></i></a>
-            </li>
-        </ul>
-    </footer>
+        <!-- SVG Backgrounds -->
+
+        <div id="svg-background">
+            <svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <pattern id="dots" x="0" y="0" width="8" height="8" patternUnits="userSpaceOnUse">
+                        <circle cx="5" cy="5" r="1" fill="rgba(16, 118, 177, 0.21)" />
+                    </pattern>
+                </defs>
+                <rect width="100%" height="100%" fill="url(#dots)" />
+            </svg>
+        </div>
+
+        <div id="svg-top-mask">
+            <svg viewBox="0 0 320 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M320 67.8024L309.333 71.5692C298.667 75.336 277.333 82.8696 256 73.4526C234.667 64.0356 213.333 37.668 192 35.7846C170.667 33.9012 149.333 56.502 128 58.3854C106.667 60.2688 85.3333 41.4348 64 33.9012C42.6667 26.3676 21.3333 30.1344 10.6667 32.0178L-3.43728e-05 33.9012L-3.73366e-05 2.79753e-05L10.6666 2.70428e-05C21.3333 2.61103e-05 42.6666 2.42453e-05 64 2.23802e-05C85.3333 2.05152e-05 106.667 1.86502e-05 128 1.67852e-05C149.333 1.49202e-05 170.667 1.30551e-05 192 1.11901e-05C213.333 9.3251e-06 234.667 7.46008e-06 256 5.59506e-06C277.333 3.73004e-06 298.667 1.86502e-06 309.333 9.3251e-07L320 0L320 67.8024Z"
+                    fill="url(#paint0_linear_7931_575)" />
+                <defs>
+                    <linearGradient id="paint0_linear_7931_575" x1="160" y1="78" x2="160" y2="1.39876e-05"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#FAF9F6" stop-opacity="0" />
+                        <stop offset="1" stop-color="#FAF9F6" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+
+        <div id="svg-bottom-mask">
+            <svg viewBox="0 0 320 78" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M0 10.1976L10.6667 6.43079C21.3333 2.66398 42.6667 -4.86962 64 4.54739C85.3333 13.9644 106.667 40.332 128 42.2154C149.333 44.0988 170.667 21.498 192 19.6146C213.333 17.7312 234.667 36.5652 256 44.0988C277.333 51.6324 298.667 47.8656 309.333 45.9822L320 44.0988V78H309.333C298.667 78 277.333 78 256 78C234.667 78 213.333 78 192 78C170.667 78 149.333 78 128 78C106.667 78 85.3333 78 64 78C42.6667 78 21.3333 78 10.6667 78H0V10.1976Z"
+                    fill="url(#paint0_linear_7931_574)" />
+                <defs>
+                    <linearGradient id="paint0_linear_7931_574" x1="160" y1="0" x2="160" y2="78"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#FAF9F6" stop-opacity="0" />
+                        <stop offset="1" stop-color="#FAF9F6" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </div>
+    </main>
 
     <!-- font awesome script -->
     <script src="https://kit.fontawesome.com/1898f2e833.js" crossorigin="anonymous"></script>
     <!-- link to external javaScript file -->
     <script src="assets/js/script.js"></script>
-    <!-- emailjs script -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
 </body>
 
 </html>
