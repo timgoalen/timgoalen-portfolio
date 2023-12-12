@@ -9,11 +9,14 @@
     --secondary-colour-2-light: #C2E4BE;
     --off-black: #1B1B1B;
     --off-white: #FAF9F6;
+    --off-white-transparent: #faf9f682;
     --white: #FFF;
-    --gradient-background-1: linear-gradient(153deg, rgb(255, 255, 255) 10%, rgba(255, 255, 255, 0) 100%);
+    --gradient-background-1: linear-gradient(153deg, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
     --gradient-background-2: linear-gradient(225deg, rgb(250, 249, 246) 50%, rgba(250, 249, 246, 0) 100%);
     --box-shadow: 0px 4px 40px 0px rgba(209, 209, 209, 0.65), -20px -20px 40px 0px #FFFFFF;
     --max-width: 1400px;
+    --screen-padding: 10px;
+    --blur-filter: blur(1px);
 }
 
 * {
@@ -41,13 +44,16 @@ h2 {
     text-transform: uppercase;
     color: var(--secondary-colour-1);
     text-align: center;
-    /* backdrop-filter: blur(1px); */
+    display: inline-block;
+    background-color: var(--off-white-transparent);
 }
 
 .h2-container {
     position: relative;
     z-index: 1;
     margin: 1.5rem 0;
+    display: grid;
+    place-items: center;
 }
 
 /* SVGs */
@@ -91,7 +97,7 @@ main {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 0.4rem;
+    padding: var(--screen-padding);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -115,15 +121,14 @@ main {
     top: 2.1rem;
     padding: 0 0.4rem;
     color: var(--off-black);
-    backdrop-filter: blur(-1px);
     width: 100%;
     text-align: end;
     height: 100vh;
     height: 100dvh;
     background: var(--gradient-background-2);
-    /* backdrop-filter: blur(2px); */
     right: -100%;
     transition: right 0.2s ease;
+    display: none;
 }
 
 .navbar-links ul {
@@ -178,13 +183,9 @@ main {
     background: var(--gradient-background-1);
     z-index: 1;
     box-shadow: var(--box-shadow);
-    /* backdrop-filter: blur(1.5px); */
+    -webkit-backdrop-filter: var(--blur-filter);
+    backdrop-filter: var(--blur-filter);
     outline: 1.5px solid var(--white);
-}
-
-
-.landing-page-text {
-    /* filter: blur(0px); */
 }
 
 .landing-item-1 {
@@ -200,15 +201,22 @@ main {
 
 #software-eng-about-section,
 #tv-composer-about-section {
-    padding: 0 0.4rem;
+    padding: 0 var(--screen-padding);
     margin: 0 auto 0.4rem auto;
     position: relative;
     z-index: 1;
     max-width: 600px;
 }
 
+.about-para-1,
+.about-para-2, .about-text {
+    background-color: var(--off-white-transparent);
+    font-size: 1.05rem;
+}
+
+
 .projects-all-container {
-    margin: 1rem 0.4rem 0 0.4rem;
+    margin: 1rem var(--screen-padding) 0 var(--screen-padding);
 }
 
 .project-container {
@@ -217,7 +225,8 @@ main {
     background: var(--gradient-background-1);
     z-index: 1;
     box-shadow: var(--box-shadow);
-    /* backdrop-filter: blur(1.5px); */
+    -webkit-backdrop-filter: var(--blur-filter);
+    backdrop-filter: var(--blur-filter);
     margin: 0 auto 3rem auto;
     outline: 1.5px solid var(--white);
     overflow: hidden;
@@ -346,7 +355,7 @@ span {
 /* Listen section */
 
 #listen {
-    padding: 0 0.4rem;
+    padding: 0 var(--screen-padding);
 }
 
 #audio-player {
@@ -358,7 +367,8 @@ span {
     position: relative;
     z-index: 1;
     box-shadow: var(--box-shadow);
-    /* backdrop-filter: blur(1.5px); */
+    -webkit-backdrop-filter: var(--blur-filter);
+    backdrop-filter: var(--blur-filter);
     outline: 1px solid var(--white);
 }
 
@@ -467,7 +477,8 @@ span {
     width: 94%;
     margin: 1rem auto 0 auto;
     padding: 0.6rem;
-    /* backdrop-filter: blur(1.5px); */
+    -webkit-backdrop-filter: var(--blur-filter);
+    backdrop-filter: var(--blur-filter);
 }
 
 #contact-form label {
